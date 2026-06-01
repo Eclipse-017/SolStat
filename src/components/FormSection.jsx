@@ -3,7 +3,7 @@ function FormSection(){
         <section className="form-section">
             <div className="form-container">
                 <h2>Have Questions About Planetary Science?</h2>
-                <p className="hover">
+                <p className="subtitle">
                     Interested in learning more about space, astronomy , or how planetary date is collected or analyzed?<br /> Reach out and we wi'll get back to you.
                 </p>
 
