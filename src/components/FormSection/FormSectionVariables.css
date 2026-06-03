@@ -1,0 +1,31 @@
+:root{
+    --vid-sec-flex-row-gap: 0px;
+    --vid-sec-flex-direction: row;
+    --vid-sec-flex-basis: 50%;
+
+    --vid-sec-height: 80dvh;
+    --vid-sec-padding-block: 5cqh;
+    --vid-sec-padding-inline: 5cqw;
+    --vid-sec-border-raduis: 2cqw;
+
+    --vid-sec-bg-clr: hsl(0, 0%, 97%);
+    --vid-sec-light-blue-bg-clr: lightBlue;
+
+    --vid-sec-heading: #164BAF;
+    --vid-sec-description: #0F2A44;
+    --vid-sec-description-strong: #1274A4;
+
+    --vid-sec-h2-font-size: 2rem;
+    --vid-sec-p-font-size: 1rem;
+
+    --vid-sec-h2-line-height: 2.2ch;
+    --vid-sec-p-line-height: 2.5ch;
+
+    --vid-sec-h2-width: 28ch;
+    --vid-sec-p-width: 55ch;
+
+    --vid-sec-right-gap: 1ch;
+    --vid-sec-right-order: 0;
+    --vid-sec-padding-inline-start: var(--vid-sec-padding-inline);
+    --vid-sec-video-width: 100%;
+}

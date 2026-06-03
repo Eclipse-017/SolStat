@@ -1,0 +1,22 @@
+section.main-section{
+  width: 100%;
+  min-width: 250px;
+  padding-block: var(--sec-padding-block);
+  padding-inline: var(--sec-padding-inline);
+}
+
+h2.section-header{
+    color: var(--sec-heading-clr);
+    line-height: var(--sec-heading-line-height);
+    font-size: var(--sec-heading-font-size);
+}
+
+p.section-description{
+    color: var(--sec-description-clr);
+    line-height: var(--sec-description-line-height);
+    font-size: var(--sec-description-font-size);
+    
+    strong, bold{
+        color: var(--vid-sec-description-strong-clr);
+    }
+}

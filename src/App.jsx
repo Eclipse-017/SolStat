@@ -1,9 +1,9 @@
-// import { useState } from 'react'
 import './App.css'
-import FormSection from './components/FormSection'
+import './styles/styles/variables.css'
+
+import FormSection from './components/FormSection/FormSection'
 
 function App() {
-
 
   return (
     <>

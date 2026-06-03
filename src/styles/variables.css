@@ -1,0 +1,14 @@
+:root{
+    --sec-padding-block: 5cqh;
+    --sec-padding-inline: 5cqw;
+
+    --sec-heading-clr: #164BAF;
+    --sec-description-clr: #0F2A44;
+    --sec-description-strong-clr: #1274A4;
+
+    --sec-heading-font-size: 2rem;
+    --sec-description-font-size: 1rem;
+
+    --sec-heading-line-height: 2.2ch;
+    --sec-description-line-height: 2.5ch;
+}
