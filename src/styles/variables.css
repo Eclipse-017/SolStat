@@ -1,6 +1,8 @@
 :root{
-    --sec-padding-block: 5cqh;
-    --sec-padding-inline: 5cqw;
+    --sec-min-height: 80dvh;
+    
+    --sec-padding-block: 5dvh;
+    --sec-padding-inline: 5dvw;
 
     --sec-heading-clr: #164BAF;
     --sec-description-clr: #0F2A44;

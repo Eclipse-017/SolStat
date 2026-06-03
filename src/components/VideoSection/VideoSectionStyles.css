@@ -1,11 +1,11 @@
 .video-container{
   container: video-container / inline-size;
   background-color: var(--vid-sec-bg-clr);
+  display: flex;
 }
 
 .video-section{
   width: 100%;
-  height: var(--vid-sec-height);
   display: flex;
   flex-direction: var(--vid-sec-flex-direction);
   row-gap: var(--vid-sec-flex-row-gap);
@@ -49,7 +49,7 @@
   .right{
     /* background-color: lightpink; */
 
-    padding-inline-start: var(--vid-sec-padding-inline-start);
+    /* padding-inline-start: var(--vid-sec-padding-inline-start); */
     text-align: center;
     display: flex;
     flex-direction: column;

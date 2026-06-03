@@ -1,23 +1,10 @@
 
-@container video-container (max-width: 1500px){
+@media (max-width: 1100px){
 
     .video-section{
-        /* border: 5px solid orange; */
-
-        --vid-sec-height: 47cqw;
-    }
-
-}
-
-@container video-container (max-width: 1000px){
-
-    .video-section{
-        /* border-color: blue; */
-
-        --vid-sec-height: auto;
         --vid-sec-flex-row-gap: 5cqw;
         --vid-sec-flex-direction: column;
-        --vid-sec-border-raduis: 4cqw;
+        --vid-sec-border-raduis: 4dvw;
         --vid-sec-video-width: 90%;
         --vid-sec-right-order: -1;
         --vid-sec-padding-inline-start: 0px;
@@ -25,14 +12,13 @@
 
 }
 
-@container video-container (max-width: 500px){
+@media (max-width: 500px){
 
     .video-section{
-        /* border-color: green; */
-
         --vid-sec-flex-row-gap: 8cqw;
         --vid-sec-heading-width: 16ch;
         --vid-sec-description-width: 30ch;
+        --vid-sec-video-width: 80dvw;
     }
 
 }
