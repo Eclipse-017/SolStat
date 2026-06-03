@@ -1,4 +1,6 @@
 :root{
+    --sec-min-height: 80dvh;
+    
     --sec-padding-block: 5cqh;
     --sec-padding-inline: 5cqw;
 

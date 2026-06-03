@@ -8,7 +8,7 @@ function FormSection(){
             <div className="form-container">
                 <h2 className="section-heading">Have Questions About Planetary Science?</h2>
                 <p className="section-description">
-                    Interested in learning more about space, astronomy , or how planetary date is collected or analyzed?<br /> Reach out and we wi'll get back to you.
+                    Interested in learning more about space, astronomy , or how planetary date is collected or analyzed? Reach out and we wi'll get back to you.
                 </p>
 
                 <form id="contact-form">

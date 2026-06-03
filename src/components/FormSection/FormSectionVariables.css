@@ -1,15 +1,10 @@
 :root{
-    --vid-sec-flex-row-gap: 0px;
-    --vid-sec-flex-direction: row;
-    --vid-sec-flex-basis: 50%;
+    --vid-sec-bg-clr: hsl(0, 0%, 97%);
+    --vid-sec-light-blue-bg-clr: lightBlue;
 
-    --vid-sec-height: 80dvh;
     --vid-sec-padding-block: 5cqh;
     --vid-sec-padding-inline: 5cqw;
     --vid-sec-border-raduis: 2cqw;
-
-    --vid-sec-bg-clr: hsl(0, 0%, 97%);
-    --vid-sec-light-blue-bg-clr: lightBlue;
 
     --vid-sec-heading: #164BAF;
     --vid-sec-description: #0F2A44;
