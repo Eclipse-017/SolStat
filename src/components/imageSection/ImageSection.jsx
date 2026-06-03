@@ -14,7 +14,7 @@ const ImageSection = () => {
         let imageData = await response.json();
         setPlanets(imageData);
       } catch (error) {
-        setPlanets("Error fetching image data:", error);
+        console.error("Error fetching image data:", error);
       }
     }
     fetchImageData();
