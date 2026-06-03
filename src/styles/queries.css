@@ -1,30 +1,47 @@
 
-@container video-container (max-width: 1500px){
+@media (max-width: 1500px){
 
-    .video-section{
-        --sec-heading-font-size: 2.1cqw;
-        --sec-description-font-size: 1.05cqw;
+    .main-section{
+        border: 5px solid orange;
+
+        --sec-min-height: 50dvw;
+        --sec-heading-font-size: 2.1dvw;
+        --sec-description-font-size: 1.05dvw;
     }
 
 }
 
-@container video-container (max-width: 1000px){
+@media (max-width: 1100px){
 
-    .video-section{
-        --sec-padding-block: 8cqh;
-        --sec-padding-inline: 3cqw;
+    .main-section{
+        border: 5px solid blue;
 
-        --sec-heading-font-size: 4cqw;
-        --sec-description-font-size: 2cqw;
+        --sec-min-height: auto;
+        --sec-padding-block: 8dvw;
+        --sec-padding-inline: 3dvw;
+        --sec-heading-font-size: 3.5dvw;
+        --sec-description-font-size: 1.8dvw;
     }
 
 }
 
-@container video-container (max-width: 500px){
+@media (max-width: 800px){
 
-    .video-section{
-        --sec-heading-font-size: 6.5cqw;
-        --sec-description-font-size: 3.5cqw;
+    .main-section{
+        border: 5px solid red;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .main-section{
+        border: 5px solid green;
+
+        --sec-padding-block: 12dvw;
+        --sec-padding-inline: 8dvw;
+        --sec-heading-font-size: 6.5dvw;
+        --sec-description-font-size: 3.5dvw;
     }
 
 }
