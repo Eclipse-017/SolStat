@@ -1,5 +1,8 @@
 import './App.css'
-import './styles/styles/variables.css'
+import './styles/variables.css'
+import './styles/reset.css'
+import './styles/utilities.css'
+import './styles/queries.css'
 
 import FormSection from './components/FormSection/FormSection'
 

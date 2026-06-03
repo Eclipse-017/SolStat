@@ -5,7 +5,7 @@ section.main-section{
   padding-inline: var(--sec-padding-inline);
 }
 
-h2.section-header{
+h2.section-heading{
     color: var(--sec-heading-clr);
     line-height: var(--sec-heading-line-height);
     font-size: var(--sec-heading-font-size);
