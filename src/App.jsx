@@ -1,12 +1,12 @@
 import './App.css'
 import VideoSection from './components/VideoSection/VideoSection'
-import FormSection from './components/FormSection'
+import HeroSection from './components/HeroSection/HeroSection'
 
 function App(){
   return( 
     <>
+      <HeroSection></HeroSection>
       <VideoSection src='/public/video/video.mp4'/>
-      <FormSection></FormSection>
     </>
   )
 }

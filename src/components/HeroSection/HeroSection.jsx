@@ -1,6 +1,4 @@
 import './HeroSection.css';
-import logo from '../assets/graphics.png';
-import earthImage from '../assets/075cfe8711f093d2ee4330cfa37d385003066f0a.png';
 
 function HeroSection() {
   return (
@@ -11,7 +9,7 @@ function HeroSection() {
       <header>
         <nav className="navigation">
           <div className="logo">
-            <img src={logo} alt="Logo" /> 
+            <img src="src/assets/graphics.png" alt="Logo" /> 
           </div>
         </nav>
       </header>
@@ -38,7 +36,7 @@ function HeroSection() {
           </div>
 
           <div className="hero-image">
-            <img src={earthImage} alt="The Blue Earth" /> 
+            <img src="src/assets/heroimage.png" alt="The Blue Earth" /> 
           </div>
 
         </section>
