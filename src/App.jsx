@@ -6,6 +6,8 @@ import './styles/queries.css'
 
 import VideoSection from './components/VideoSection/VideoSection'
 
+// VIDEO FORM SECTION
+
 function App(){
   return( 
     <>
