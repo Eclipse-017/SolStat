@@ -1,5 +1,6 @@
 section.main-section{
     width: 100%;
+    min-width: 250px;
     min-height: var(--sec-min-height);
     padding-block: var(--sec-padding-block);
     padding-inline: var(--sec-padding-inline);
@@ -19,5 +20,12 @@ section.main-section{
             color: var(--vid-sec-description-strong-clr);
         }
     }
+}
 
+.important{
+    &::after{
+        content: "*";
+        color: red;
+        font-size: 1em;
+    }
 }
