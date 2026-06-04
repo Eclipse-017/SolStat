@@ -9,8 +9,53 @@
 
 button{
     border-radius: var(--btn-border-raduis);
+    background-color: var(--btn-bg-color);
+    color: var(--btn-fg-color);
+    font-size: var(--btn-font-size);
+    padding-block: var(--btn-padding-block);
+    padding-inline: var(--btn-padding-inline);
+    min-width: var(--btn-min-width);
+    border: none; outline: none;
+
+    &:hover{
+        background-color: var(--btn-bg-color-hover);
+    }
+
+    &.btn-alt{
+        box-shadow: inset 0 0 0 var(--btn-border-line) white;
+        background-color: var(--btn-bg-color-alt);
+        color: var(--btn-fg-color-alt);
+
+        &:hover{
+            background-color: var(--btn-bg-color-alt-hover);
+        }
+    }
+
+    &.btn-trans{
+        background-color: transparent;
+        color: var(--btn-fg-color);
+    }
+
+    &.btn-long{
+        padding-inline: var(--btn-padding-inline-long);
+    }
 }
 
 img, video{
     border-radius: var(--media-border-raduis);
+}
+
+input{
+    height: var(--input-height);
+}
+
+textarea{
+    height: var(--textarea-height);
+}
+
+input, textarea{
+    padding-block: 0.8em;
+    padding-inline: 1.5em;
+    border-radius: 0.6em;
+    border: 0.2em solid var(--input-border-line);
 }

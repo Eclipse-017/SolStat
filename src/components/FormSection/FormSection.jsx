@@ -3,6 +3,8 @@ import './FormSectionStyles.css'
 import './FormSectionQueries.css'
 
 function FormSection(){
+    const maxChar = 100;
+
     return(
         <section className="main-section form-section">
             <div className='heading-container'>
@@ -15,30 +17,30 @@ function FormSection(){
             <form>
                 <div className="form-grid">
                     
-                    <div color="form-group">
-                        <label htmlFor="fullname">Full Name</label>
-                        <input type="text" id="fullName" placeholder="fullName" required />
-                    </div>
+                    <div className="form-group">
+                        <label htmlFor="fullName" className='important'>Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required />
+                    </div> 
 
                     <div className="form-group">
-                        <label htmlFor="email">Email</label>
+                        <label htmlFor="email" className='important'>Email</label>
                         <input type="email" id="email" name="email" placeholder="example@example.com" required />
                     </div>    
 
                     <div className="form-group">
-                        <label htmlFor="phone">Phone Number</label>
+                        <label htmlFor="phone" className='important'>Phone Number</label>
                         <input type="tel" id="phone" name="phone" placeholder="Please Enter a Valid Phone Number" required />
                     </div>                    
                         
                     <div className="form-group full-width">
-                        <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Enter Your Message" maxLength="100"></textarea>
-                        <small className=''>100 characters</small>
+                        <label htmlFor="message" className='important'>Message</label>
+                        <textarea name="message" id="message" placeholder="Enter Your Message" maxLength='${m}' required></textarea>
+                        <small className='max-char'>{maxChar} characters</small>
                     </div>   
 
                 </div>
 
-                <button typeof="submit" className="submit-btn">Submit {">"}</button>
+                <button typeof="submit" className="submit-btn btn-long">Submit <span>{">"}</span></button>
             </form>
         </section>
 

@@ -1,6 +1,11 @@
 :root{
-    --form-sec-bg-clr: hsl(0, 0%, 97%);
+    --form-sec-bg-clr: hsl(0, 0%, 95%);
 
     --form-sec-heading-width: auto;
-    --form-sec-description-width: 55ch;
+    --form-sec-description-width: 75ch;
+
+    --form-row-gap: 6dvh;
+    --form-grid-row-gap: 1.5rem;
+    --form-grid-col-gap: 1.3rem;
+    --form-group-col-gap: 0.8rem;
 }

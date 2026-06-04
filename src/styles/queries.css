@@ -4,7 +4,6 @@
     .main-section{
         border: 5px solid orange;
 
-        --sec-min-height: 50dvw;
         --sec-heading-font-size: 2.1dvw;
         --sec-description-font-size: 1.05dvw;
     }
@@ -16,7 +15,6 @@
     .main-section{
         border: 5px solid blue;
 
-        --sec-min-height: auto;
         --sec-padding-block: 8dvw;
         --sec-padding-inline: 3dvw;
         --sec-heading-font-size: 3.5dvw;
