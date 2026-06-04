@@ -1,6 +1,6 @@
 import './App.css'
 import VideoSection from './components/VideoSection/VideoSection'
-import TableSection from './components/TableSection'
+import TableSection from './components/TableSection/TableSection'
 import FormSection from './components/FormSection'
 
 function App(){

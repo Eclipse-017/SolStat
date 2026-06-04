@@ -2,7 +2,7 @@ import './TableSection.css'
 
 function TableSection() {
     return (
-        <div>
+        <div className="container table-container">
             <section className="tablesection">
                 <div className="table-header">
                     <h2>Planetary Facts at a Glance</h2>
@@ -10,9 +10,9 @@ function TableSection() {
                         used by astronomers and researchers worldwide.
                     </p>
                 </div>
+                <h3 className="caption">Data about the planets in our Solar System (Planetary Facts taken from NASA)</h3>
                 <div className="table-data">
                     <table id="exploredata" cellspacing="0">
-                        {/* <caption>Data about the planets in our Solar System (Planetary Facts taken from NASA)</caption> */}
                         <thead>
                             <tr>
                                 <th scope="col" colspan="2"></th>
@@ -56,7 +56,7 @@ function TableSection() {
                             <tr>
                                 <td rowspan="4" className="topic">Jovian Planets</td>
                                 <td rowspan="2" className="topic">Gas Giants</td>
-                                <td className="content">Jupita</td>
+                                <td className="content">Jupiter</td>
                                 <td className="content">0.330</td>
                                 <td className="content">4,878</td>
                                 <td className="content">5427</td>
