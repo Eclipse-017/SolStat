@@ -1,6 +1,7 @@
 import './FormSectionVariables.css'
 import './FormSectionStyles.css'
 import './FormSectionQueries.css'
+import Button from '../Button/Button'
 
 function FormSection(){
     const maxChar = 100;
@@ -16,7 +17,6 @@ function FormSection(){
 
             <form>
                 <div className="form-grid">
-                    
                     <div className="form-group">
                         <label htmlFor="fullName" className='important'>Full Name</label>
                         <input type="text" id="fullName" name="fullName" placeholder="Full Name" required />
@@ -34,13 +34,12 @@ function FormSection(){
                         
                     <div className="form-group full-width">
                         <label htmlFor="message" className='important'>Message</label>
-                        <textarea name="message" id="message" placeholder="Enter Your Message" maxLength='${m}' required></textarea>
+                        <textarea name="message" id="message" placeholder="Enter Your Message" maxLength={maxChar} required></textarea>
                         <small className='max-char'>{maxChar} characters</small>
                     </div>   
-
                 </div>
 
-                <button typeof="submit" className="submit-btn btn-long">Submit <span>{">"}</span></button>
+                <Button className="btn-long"/>
             </form>
         </section>
 

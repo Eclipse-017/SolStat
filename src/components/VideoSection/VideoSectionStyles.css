@@ -48,20 +48,16 @@
   .right{
     /* background-color: lightpink; */
 
-    /* padding-inline-start: var(--vid-sec-padding-inline-start); */
     text-align: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     order: var(--vid-sec-right-order);
-    row-gap: var(--vid-sec-right-gap);
 
-    h2{
+    .section-heading{
       width: var(--vid-sec-heading-width);
     }
     
-    p{
+    .section-description{
       width: var(--vid-sec-description-width);
     }
   }

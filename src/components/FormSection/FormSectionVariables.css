@@ -2,10 +2,20 @@
     --form-sec-bg-clr: hsl(0, 0%, 95%);
 
     --form-sec-heading-width: auto;
-    --form-sec-description-width: 75ch;
+    --form-sec-description-width: 76ch;
 
-    --form-row-gap: 6dvh;
+    --form-row-gap: 6cqh; 
+    --form-button-align-self: self-start; 
+    
     --form-grid-row-gap: 1.5rem;
     --form-grid-col-gap: 1.3rem;
-    --form-group-col-gap: 0.8rem;
+    --form-grid-columns: 2;
+    
+    --form-group-row-gap: 0.8rem;
+
+    --font-label-size: 1rem;
+
+    --form-input-height: 7ch;
+    --form-input-border-line: lightgray;
+    --form-textarea-height: 7ch;
 }

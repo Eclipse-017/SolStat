@@ -19,23 +19,42 @@
         
         .form-grid{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(var(--form-grid-columns), 1fr);
             row-gap: var(--form-grid-row-gap);
             column-gap: var(--form-grid-col-gap);
+        }
 
-            .form-group{
-                display: flex;
-                flex-direction: column;
-                row-gap: var(--form-group-col-gap);
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            row-gap: var(--form-group-row-gap);
 
-                .max-char{
-                    color: red;
-                }
+            *{
+                font-size: var(--font-label-size);
+            }
+            
+            input{
+                height: var(--form-input-height);
+            }
+
+            textarea{
+                height: var(--form-textarea-height);
+                padding-block: 0.8em;
+            }
+
+            input, textarea{
+                padding-inline: 1.5em;
+                border-radius: 0.6em;
+                border: 0.2em solid var(--form-input-border-line);
+            }
+
+            .max-char{
+                color: grey;
             }
         }
 
         button{
-            align-self: self-start;
+            align-self: var(--form-button-align-self);
 
             span{
                 margin-inline-start: 1em;

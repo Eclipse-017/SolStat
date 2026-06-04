@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-*, *::after, *::before{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+:root{
+    --btn-min-width: 10rem;
+    --btn-min-width-long: 20rem;
+    --btn-height: 3rem;
+    --btn-padding-inline: 2rem;
+    --btn-border-line: 0.2em;
+    --btn-border-raduis: 0.8em;
+    --btn-bg-color: hsl(219, 78%, 39%);
+    --btn-bg-color-hover: hsl(219, 78%, 49%);
+    --btn-bg-color-alt: var(--scheme-clr);
+    --btn-bg-color-alt-hover: var(--scheme-clr-hover);
+    --btn-fg-color: #ffffff;
+    --btn-fg-color-alt: #ffffff;
+    --btn-font-size: 0.8rem;
 }
 
 button{
@@ -41,6 +48,16 @@ button{
     }
 }
 
-img, video{
-    border-radius: var(--media-border-raduis);
+@media (max-width: 600px){
+
+    button{
+        --btn-min-width: auto;
+        --btn-min-width-long: 100%;
+        --btn-height: 8cqw;
+        --btn-padding-inline: 5cqw;
+        --btn-border-line: 0.5cqw;
+        --btn-border-raduis: 1.5cqw;
+        --btn-font-size: 2.5cqw;
+    }
+
 }

@@ -3,7 +3,7 @@
     --vid-sec-flex-direction: row;
     --vid-sec-flex-basis: 50%;
 
-    --vid-sec-height: 80dvh;
+    --vid-sec-height: 80cqh;
 
     --vid-sec-bg-clr: hsl(0, 0%, 97%);
     --vid-sec-light-blue-bg-clr: lightBlue;
@@ -11,7 +11,6 @@
     --vid-sec-heading-width: 28ch;
     --vid-sec-description-width: 55ch;
 
-    --vid-sec-right-gap: 1ch;
     --vid-sec-right-order: 0;
     --vid-sec-padding-inline-start: var(--sec-padding-inline);
     --vid-sec-video-width: 100%;

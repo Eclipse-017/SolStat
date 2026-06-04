@@ -21,7 +21,7 @@ function VideoSection({
                     </figure>
                 </div>
 
-                <div className='right'>
+                <div className='right heading-container'>
                     <h2 className='section-heading'>How Planetary Data Helps Us Understand Space</h2>
 
                     <p className='section-description'>

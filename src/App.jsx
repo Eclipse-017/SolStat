@@ -5,10 +5,7 @@ import './styles/utilities.css'
 import './styles/queries.css'
 
 import FormSection from './components/FormSection/FormSection'
-
 import VideoSection from './components/VideoSection/VideoSection'
-
-// VIDEO FORM SECTION
 
 function App(){
   return( 

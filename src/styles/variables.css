@@ -1,10 +1,11 @@
 :root{
     --scheme-clr: hsl(224, 86%, 14%);
     --scheme-clr-hover: hsl(224, 86%, 24%);
-    --sec-min-height: 50dvh;
+
+    --sec-min-height: 50cqh;
     
-    --sec-padding-block: 5dvh;
-    --sec-padding-inline: 5dvw;
+    --sec-padding-block: 8cqh;
+    --sec-padding-inline: 5cqw;
 
     --sec-heading-clr: #164BAF;
     --sec-description-clr: #0F2A44;
@@ -15,24 +16,8 @@
 
     --sec-heading-line-height: 2.2ch;
     --sec-description-line-height: 2.5ch;
+    
+    --sec-heading-row-gap: 1ch;
 
-    --btn-min-width: 10rem;
-    --btn-padding-block: 1rem;
-    --btn-padding-inline: 2rem;
-    --btn-padding-inline-long: 8rem;
-    --btn-border-line: 1px;
-    --btn-border-raduis: 0.4dvw;
-    --btn-bg-color: hsl(219, 78%, 39%);
-    --btn-bg-color-hover: hsl(219, 78%, 49%);
-    --btn-bg-color-alt: var(--scheme-clr);
-    --btn-bg-color-alt-hover: var(--scheme-clr-hover);
-    --btn-fg-color: #ffffff;
-    --btn-fg-color-alt: #ffffff;
-    --btn-font-size: 0.8rem;
-
-    --media-border-raduis: 2dvw;
-
-    --input-border-line: lightgray;
-    --input-height: 7ch;
-    --textarea-height: 7ch;
+    --media-border-raduis: 2cqw;
 }

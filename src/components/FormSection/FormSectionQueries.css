@@ -1,28 +1,39 @@
 
-@media (max-width: 1500px){
-
-    .main-section{
-    }
-
-}
-
-@media (max-width: 1100px){
-
-    .main-section{
-    }
-
-}
-
 @media (max-width: 800px){
 
-    .main-section{
+    .form-section{
+        --form-grid-columns: 1;
+        --form-button-align-self: stretch;
+        --form-row-gap: 6cqw;
+        --font-label-size: 1.8cqw;
     }
 
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
 
-    .main-section{
+    .form-section{
+        --form-sec-heading-width: 20ch;
+        --form-sec-description-width: 31ch;
+        --font-label-size: 2.5cqw;
+
+        --form-grid-row-gap: 4cqw;
+        --form-group-row-gap: 2cqw;
+
+        --form-input-height: 12cqw;
+        --form-textarea-height: 30cqw;
+        
+        form .form-group{
+            textarea{
+                padding-block: 0.8em;
+            }
+
+            input, textarea{
+                padding-inline: 1.5em;
+                border-radius: 0.6em;
+                border: 0.2em solid var(--form-input-border-line);
+            }
+        }
     }
 
 }

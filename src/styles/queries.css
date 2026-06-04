@@ -2,7 +2,7 @@
 @media (max-width: 1500px){
 
     .main-section{
-        border: 5px solid orange;
+        /* border: 5px solid orange; */
 
         --sec-heading-font-size: 2.1dvw;
         --sec-description-font-size: 1.05dvw;
@@ -10,13 +10,11 @@
 
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1000px){
 
     .main-section{
-        border: 5px solid blue;
+        /* border: 5px solid blue; */
 
-        --sec-padding-block: 8dvw;
-        --sec-padding-inline: 3dvw;
         --sec-heading-font-size: 3.5dvw;
         --sec-description-font-size: 1.8dvw;
     }
@@ -26,20 +24,35 @@
 @media (max-width: 800px){
 
     .main-section{
-        border: 5px solid red;
+        /* border: 5px solid purple; */
     }
 
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
 
     .main-section{
-        border: 5px solid green;
+        /* border: 5px solid green; */
 
-        --sec-padding-block: 12dvw;
-        --sec-padding-inline: 8dvw;
-        --sec-heading-font-size: 6.5dvw;
-        --sec-description-font-size: 3.5dvw;
+        --sec-padding-block: 10cqw;
+        --sec-padding-inline: 8cqw;
+        
+        --sec-heading-font-size: 6.5cqw;
+        --sec-description-font-size: 3.5cqw;
+
+        --sec-heading-row-gap: 2cqw;
+
+        .heading-container{
+            align-items: center;
+            
+            .section-heading{
+                text-align: center;
+            }
+            
+            .section-description{
+                text-align: center;
+            }
+        }
     }
 
 }
