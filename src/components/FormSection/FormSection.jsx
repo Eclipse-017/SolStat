@@ -11,6 +11,8 @@ import * as Yup from 'yup'
 
 function FormSection(){
     const maxChar = 100;
+    const nameMin = 2;
+    const nameMax = 50;
 
     // Objects that contains the form data
     const [formData, setFormData] = useState({
@@ -25,16 +27,16 @@ function FormSection(){
 
     const validateSchema = Yup.object({
         fullName: Yup.string()
-            .min(2, "Full name should be a minimum of 2 characters long")
-            .max(50, "Full name can only be a maximum of 50 characters long")
+            .min(nameMin, `Full name should be a minimum of ${nameMin} characters long`)
+            .max(nameMax, `Full name can only be a maximum of ${nameMax} characters long`)
             .required("Full Name is required"),
 
         email: Yup.string()
-            .email("Invalid email format")
+            .email("Invalid email format: sample@gmail.com")
             .required("Email is required"),
 
         phoneNumber: Yup.string()
-            .matches(/^0\d{10}$/, "Phone number must start with 0 and be 11 digits")
+            .matches(/^(0|\+234)[789][01]\d{8}$/, "Enter valid Nigerian number: 09168800272 or +2349168800272")
             .required("Phone Number is required"),
 
         message: Yup.string()
@@ -134,7 +136,7 @@ function FormSection(){
                         <div className="form-group">
                             <label htmlFor="fullName" className='important'>Full Name</label>
                             <input type="text" id="fullName" name="fullName" placeholder="Full Name" 
-                                value={formData.fullName} onChange={handleChange}/>
+                                value={formData.fullName} required maxLength={nameMax} onChange={handleChange}/>
 
                             {errors.fullName && <span className='error'>{errors.fullName}</span>}
                         </div> 
@@ -142,15 +144,15 @@ function FormSection(){
                         <div className="form-group">
                             <label htmlFor="email" className='important'>Email</label>
                             <input type="text" id="email" name="email" placeholder="example@example.com" 
-                                value={formData.email} onChange={handleChange}/>
+                                value={formData.email} required onChange={handleChange}/>
 
                             {errors.email && <span className='error'>{errors.email}</span>}
                         </div>    
 
                         <div className="form-group">
                             <label htmlFor="phoneNumber" className='important'>Phone Number</label>
-                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Please Enter a Valid Phone Number" 
-                                value={formData.phoneNumber} onChange={handleChange}/>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter valid Nigerian number: 09168800272 or +2349168800272" 
+                                value={formData.phoneNumber} maxLength={14} required onChange={handleChange}/>
 
                             {errors.phoneNumber && <span className='error'>{errors.phoneNumber}</span>}
                         </div>                    
@@ -158,7 +160,7 @@ function FormSection(){
                         <div className="form-group full-width">
                             <label htmlFor="message" className='important'>Message</label>
                             <textarea name="message" id="message" placeholder="Enter Your Message" maxLength={maxChar} 
-                                value={formData.message} onChange={handleChange}></textarea>
+                                value={formData.message} required onChange={handleChange}></textarea>
 
                             <div className='error-max'>
                                 {errors.message && <span className='error'>{errors.message}</span>}
