@@ -4,12 +4,14 @@
     row-gap: var(--form-row-gap);
     background-color: var(--form-sec-bg-clr);
 
-    .section-heading{
-        width: var(--form-sec-heading-width);
-    }
+    .submission-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--form-row-gap);
 
-    .section-description{
-        width: var(--form-sec-description-width);
+        .btn-success{
+            margin-right: auto;
+        }
     }
 
     form{
@@ -27,10 +29,11 @@
         .form-group{
             display: flex;
             flex-direction: column;
+            position: relative;
             row-gap: var(--form-group-row-gap);
 
             *{
-                font-size: var(--font-label-size);
+                font-size: var(--form-label-font-size);
             }
             
             input{
@@ -47,9 +50,35 @@
                 border-radius: 0.6em;
                 border: 0.2em solid var(--form-input-border-line);
             }
+            
+            .error{
+                /* display: none; */
+                color: red;
+                font-size: var(--form-error-font-size);
+                position: absolute;
+                bottom: -2ch; left: 0px;
 
-            .max-char{
-                color: grey;
+                &.show{
+                    display: inline;
+                }
+            }
+
+            .error-max{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                .max-char{
+                    color: grey;
+                    position: absolute;
+                    bottom: -2ch;
+                }
+
+                &:has(> .show){
+                    .max-char{
+                        right: 0px;
+                    }
+                }
             }
         }
 

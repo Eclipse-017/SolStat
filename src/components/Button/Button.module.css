@@ -23,9 +23,11 @@ button{
     height: var(--btn-height);
     min-width: var(--btn-min-width);
     border: none; outline: none;
+    transition: all 0.05s ease-in;
 
     &:hover{
         background-color: var(--btn-bg-color-hover);
+        transform: scale(1.05);
     }
 
     &.btn-alt{
@@ -53,7 +55,7 @@ button{
     button{
         --btn-min-width: auto;
         --btn-min-width-long: 100%;
-        --btn-height: 8cqw;
+        --btn-height: 10cqw;
         --btn-padding-inline: 5cqw;
         --btn-border-line: 0.5cqw;
         --btn-border-raduis: 1.5cqw;

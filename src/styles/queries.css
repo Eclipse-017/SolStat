@@ -3,9 +3,6 @@
 
     .main-section{
         /* border: 5px solid orange; */
-
-        --sec-heading-font-size: 2.1dvw;
-        --sec-description-font-size: 1.05dvw;
     }
 
 }
@@ -14,9 +11,6 @@
 
     .main-section{
         /* border: 5px solid blue; */
-
-        --sec-heading-font-size: 3.5dvw;
-        --sec-description-font-size: 1.8dvw;
     }
 
 }
@@ -36,23 +30,6 @@
 
         --sec-padding-block: 10cqw;
         --sec-padding-inline: 8cqw;
-        
-        --sec-heading-font-size: 6.5cqw;
-        --sec-description-font-size: 3.5cqw;
-
-        --sec-heading-row-gap: 2cqw;
-
-        .heading-container{
-            align-items: center;
-            
-            .section-heading{
-                text-align: center;
-            }
-            
-            .section-description{
-                text-align: center;
-            }
-        }
     }
 
 }

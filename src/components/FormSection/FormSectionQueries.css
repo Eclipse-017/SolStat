@@ -4,8 +4,8 @@
     .form-section{
         --form-grid-columns: 1;
         --form-button-align-self: stretch;
-        --form-row-gap: 6cqw;
-        --font-label-size: 1.8cqw;
+        --form-row-gap: 8cqw;
+        --form-label-font-size: 1.8cqw;
     }
 
 }
@@ -13,11 +13,10 @@
 @media (max-width: 600px){
 
     .form-section{
-        --form-sec-heading-width: 20ch;
-        --form-sec-description-width: 31ch;
-        --font-label-size: 2.5cqw;
+        --form-label-font-size: 2.5cqw;
+        --form-error-font-size: 2.2cqw;
 
-        --form-grid-row-gap: 4cqw;
+        --form-grid-row-gap: 7cqw;
         --form-group-row-gap: 2cqw;
 
         --form-input-height: 12cqw;
@@ -32,6 +31,15 @@
                 padding-inline: 1.5em;
                 border-radius: 0.6em;
                 border: 0.2em solid var(--form-input-border-line);
+            }
+            
+            .error-max{
+                justify-content: space-between;
+                align-items: center;
+                
+                .max-char{
+                    color: grey;
+                }
             }
         }
     }

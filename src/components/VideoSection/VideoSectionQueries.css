@@ -4,11 +4,21 @@
     .video-section{
         --vid-sec-right-order: -1;
         --vid-sec-flex-direction: column;
-        --vid-sec-heading-width: auto;
-        --vid-sec-description-width: 69ch;
         --vid-sec-flex-row-gap: 5cqw;
         --vid-sec-border-raduis: 80cqw;
         --vid-sec-video-width: 90%;
+
+        .right{
+            .heading-container{
+                .section-heading{
+                    width: var(--vid-sec-heading-width);
+                }
+
+                .section-description{
+                    width: var(--vid-sec-description-width);
+                }
+            }
+        }
     }
 
 }
@@ -18,7 +28,7 @@
     .video-section{
         --vid-sec-flex-row-gap: 8cqw;
         --vid-sec-heading-width: 16ch;
-        --vid-sec-description-width: 30ch;
+        --vid-sec-description-width: 35ch;
         --vid-sec-video-width: 100cqw;
     }
 

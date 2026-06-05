@@ -7,17 +7,9 @@
     --sec-padding-block: 8cqh;
     --sec-padding-inline: 5cqw;
 
-    --sec-heading-clr: #164BAF;
-    --sec-description-clr: #0F2A44;
-    --sec-description-strong-clr: #1274A4;
-
-    --sec-heading-font-size: 2rem;
-    --sec-description-font-size: 1rem;
-
-    --sec-heading-line-height: 2.2ch;
-    --sec-description-line-height: 2.5ch;
-    
-    --sec-heading-row-gap: 1ch;
+    --heading-clr: #164BAF;
+    --description-clr: #0F2A44;
+    --description-strong-clr: #1274A4;
 
     --media-border-raduis: 2cqw;
 }

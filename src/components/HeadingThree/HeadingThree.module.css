@@ -1,0 +1,107 @@
+:root{
+    --h3-heading-font-size: 1rem;
+    --h3-description-font-size: 1rem;
+
+    --h3-heading-line-height: 2.2ch;
+    --h3-description-line-height: 2.5ch;
+
+    --h3-heading-width: auto;
+    --h3-description-width: auto;
+    
+    --h3-heading-row-gap: 1ch;
+
+    --h3-text-align: start;
+}
+
+.heading-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--h3-heading-row-gap);
+    align-items: start;
+
+    &.left, &.start{
+        align-items: start;
+        --h3-text-align: start;
+    }
+    
+    &.center{
+        align-items: center;
+        --h3-text-align: center;
+    }
+    
+    &.right, &.end{
+        align-items: end;
+        --h3-text-align: end;
+    }
+
+    &.tw-1{
+        --h3-heading-width: 28ch;
+        --h3-description-width: 55ch;
+    }
+
+    &.tw-2{
+        --h3-heading-width: auto;
+        --h3-description-width: 76ch;
+    }
+
+    .section-heading{
+        text-align: var(--h3-text-align);
+        width: var(--h3-heading-width);
+        color: var(--heading-clr);
+        line-height: var(--h3-heading-line-height);
+        font-size: var(--h3-heading-font-size);
+    }
+
+    .section-description{
+        text-align: var(--h3-text-align);
+        width: var(--h3-description-width);
+        color: var(--description-clr);
+        line-height: var(--h3-description-line-height);
+        font-size: var(--h3-description-font-size);
+        
+        strong, bold{
+            color: var(--description-strong-clr);
+        }
+    }
+}
+
+@media (max-width: 1500px){
+
+    .heading-container{
+        --h3-heading-font-size: 2.1dvw;
+        --h3-description-font-size: 1.05dvw;
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    .heading-container{
+        --h3-heading-font-size: 3.5dvw;
+        --h3-description-font-size: 1.8dvw;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .heading-container{
+        align-items: end;
+
+        --h3-heading-font-size: 6.5cqw;
+        --h3-description-font-size: 3.5cqw;
+
+        --h3-heading-row-gap: 2cqw;
+        
+        &.left, &.start, &.center, &.right, &.end{
+            --h3-text-align: center;
+        }
+        
+        &.tw-1, &.tw-2{
+            --h3-heading-width: 100%;
+            --h3-description-width: 100%;
+        }
+    }
+
+}
+

@@ -47,19 +47,12 @@
 
   .right{
     /* background-color: lightpink; */
+    display: flex;
 
     text-align: center;
     justify-content: center;
     align-items: center;
     order: var(--vid-sec-right-order);
-
-    .section-heading{
-      width: var(--vid-sec-heading-width);
-    }
-    
-    .section-description{
-      width: var(--vid-sec-description-width);
-    }
   }
 }
 

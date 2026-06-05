@@ -8,8 +8,8 @@
     --vid-sec-bg-clr: hsl(0, 0%, 97%);
     --vid-sec-light-blue-bg-clr: lightBlue;
 
-    --vid-sec-heading-width: 28ch;
-    --vid-sec-description-width: 55ch;
+    --vid-sec-heading-width: auto;
+    --vid-sec-description-width: 69ch;
 
     --vid-sec-right-order: 0;
     --vid-sec-padding-inline-start: var(--sec-padding-inline);
