@@ -1,11 +1,8 @@
-import styles from './MainSection.module.css'
+import './MainSection.css'
 
-function Section({className='', children}){
-    const classes = className.split(' ')
-        .map(cls => styles[cls] || cls).join(' ');
-
+function Section({className, children}){
     return(
-        <section className={`${styles['main-section']} ${classes}`}>
+        <section className={`main-section ${className}`}>
             {children}
         </section>
     )

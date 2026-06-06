@@ -49,7 +49,7 @@ const ImageSection = () => {
             </figure>
           ))}
         </div>
-        <figcaption>
+        <figcaption className="img-figcaption">
           The Nine Planets in Our Solar System.
         </figcaption>
       </section>

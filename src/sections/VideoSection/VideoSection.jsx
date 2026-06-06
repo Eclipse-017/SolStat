@@ -14,7 +14,7 @@ function VideoSection({
             <div className='video-section'>
                 <div className='left'>
                     <figure>
-                        <video autoPlay muted loop controls>
+                        <video autoPlay muted loop controls className='media-border-radius'>
                             <source src={src} type={type} />   
 
                             <p>Video not supported by browser</p>

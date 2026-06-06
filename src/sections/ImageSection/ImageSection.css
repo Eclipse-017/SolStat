@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .img-section {
   background: #f2f7ff;
   padding: 1.25rem 0.3rem;
@@ -66,7 +61,7 @@ body {
   padding: 0.4rem;
 }
 
-figcaption {
+.img-figcaption {
   text-align: center;
   font-weight: bold;
   padding: 1rem 0;
@@ -76,10 +71,10 @@ figcaption {
 
 @media (max-width: 900px) {
   .img-description {
-  padding: 0 1rem;
-}
-  
-.planet-container {
+    padding: 0 1rem;
+  }
+    
+  .planet-container {
     padding: 0.3rem;
   }
 

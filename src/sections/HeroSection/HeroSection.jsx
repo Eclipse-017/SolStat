@@ -2,9 +2,7 @@ import './HeroSection.css';
 
 function HeroSection() {
   return (
-    <>
-
-    
+    <>  
       {/* HEADER */}
       <header>
         <nav className="navigation">
