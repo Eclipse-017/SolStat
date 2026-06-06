@@ -13,8 +13,8 @@ import FormSection from './components/FormSection/FormSection'
 function App() {
   return (
     <>
-      <VideoSection src='/public/video/video.mp4'/>
       <HeroSection />
+      <VideoSection src='/public/video/video.mp4'/>
       <ImageSection />
       <TableSection />
       <FormSection />
