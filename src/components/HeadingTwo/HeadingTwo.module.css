@@ -78,6 +78,11 @@
     .heading-container{
         --h2-heading-font-size: 3.5dvw;
         --h2-description-font-size: 1.8dvw;
+        
+        &.video-heading{
+            --h2-heading-width: auto;
+            --h2-description-width: 69ch;
+        }
     }
 
 }
