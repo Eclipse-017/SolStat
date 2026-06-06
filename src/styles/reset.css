@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*, *::after, *::before{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+button{
+    border-radius: var(--btn-border-raduis);
+    background-color: var(--btn-bg-color);
+    color: var(--btn-fg-color);
+    font-size: var(--btn-font-size);
+    padding-inline: var(--btn-padding-inline);
+    height: var(--btn-height);
+    min-width: var(--btn-min-width);
+    border: none; outline: none;
+
+    &:hover{
+        background-color: var(--btn-bg-color-hover);
+    }
+
+    &.btn-alt{
+        box-shadow: inset 0 0 0 var(--btn-border-line) white;
+        background-color: var(--btn-bg-color-alt);
+        color: var(--btn-fg-color-alt);
+
+        &:hover{
+            background-color: var(--btn-bg-color-alt-hover);
+        }
+    }
+
+    &.btn-trans{
+        background-color: transparent;
+        color: var(--btn-fg-color);
+    }
+
+    &.btn-long{
+        min-width: var(--btn-min-width-long);        
+    }
+}
+
+img, video{
+    border-radius: var(--media-border-raduis);
+}
