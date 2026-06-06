@@ -1,0 +1,45 @@
+:root{
+    --sec-min-height: 50cqh;
+    --sec-padding-block: 8cqh;
+    --sec-padding-inline: 5cqw;
+}
+
+.main-section{
+    width: 100%;
+    padding-block: var(--sec-padding-block);
+    padding-inline: var(--sec-padding-inline);
+}
+
+@media (max-width: 600px){
+
+    .main-section{
+        --sec-padding-block: 10cqw;
+        --sec-padding-inline: 8cqw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

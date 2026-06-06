@@ -2,14 +2,15 @@ import './VideoSectionVariables.css'
 import './VideoSectionStyles.css'
 import './VideoSectionQueries.css'
 
-import HeadingTwo from '../HeadingTwo/HeadingTwo'
+import HeadingTwo from '../../components/HeadingTwo/HeadingTwo'
+import MainSection from '../../components/MainSection/MainSection'
 
 function VideoSection({
     src="https://cdn.pixabay.com/video/2023/10/09/184209-872701502_large.mp4", 
     type="video/mp4", desc="The Planets In Our Solar System"}){
 
     return (
-        <section className='main-section video-container'>
+        <MainSection className='video-container'>
             <div className='video-section'>
                 <div className='left'>
                     <figure>
@@ -37,7 +38,7 @@ function VideoSection({
                     />
                 </div>
             </div>
-        </section>
+        </MainSection>
     )
 
 }

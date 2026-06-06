@@ -27,9 +27,6 @@
 
     .main-section{
         /* border: 5px solid green; */
-
-        --sec-padding-block: 10cqw;
-        --sec-padding-inline: 8cqw;
     }
 
 }

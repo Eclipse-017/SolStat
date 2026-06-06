@@ -2,10 +2,11 @@ import './FormSectionVariables.css'
 import './FormSectionStyles.css'
 import './FormSectionQueries.css'
 
-import HeadingTwo from '../HeadingTwo/HeadingTwo'
-import HeadingThree from '../HeadingThree/HeadingThree'
+import HeadingTwo from '../../components/HeadingTwo/HeadingTwo'
+import HeadingThree from '../../components/HeadingThree/HeadingThree'
+import MainSection from '../../components/MainSection/MainSection'
 
-import Button from '../Button/Button'
+import Button from '../../components/Button/Button'
 import { useState } from 'react';
 import * as Yup from 'yup'
 
@@ -113,7 +114,7 @@ function FormSection(){
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     return(
-        <section className="main-section form-section">
+        <MainSection className="form-section">
             <HeadingTwo 
                 className="form-heading" 
                 title="Have Questions About Planetary Science?" 
@@ -173,7 +174,7 @@ function FormSection(){
                 </form>
             }
             
-        </section>
+        </MainSection>
     )
 }
 

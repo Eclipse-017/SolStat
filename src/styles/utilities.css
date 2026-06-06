@@ -1,8 +1,3 @@
-.main-section{
-    width: 100%;
-    padding-block: var(--sec-padding-block);
-    padding-inline: var(--sec-padding-inline);
-}
 
 .important{
     &::after{
