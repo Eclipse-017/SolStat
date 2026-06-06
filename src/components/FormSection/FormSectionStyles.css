@@ -1,0 +1,84 @@
+.form-section{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--form-row-gap);
+    background-color: var(--form-sec-bg-clr);
+
+    .submission-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--form-row-gap);
+
+        .btn-success{
+            margin-right: auto;
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--form-row-gap);
+        
+        .form-grid{
+            display: grid;
+            grid-template-columns: repeat(var(--form-grid-columns), 1fr);
+            row-gap: var(--form-grid-row-gap);
+            column-gap: var(--form-grid-col-gap);
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            row-gap: var(--form-group-row-gap);
+
+            *{
+                font-size: var(--form-label-font-size);
+            }
+            
+            input{
+                height: var(--form-input-height);
+            }
+
+            textarea{
+                height: var(--form-textarea-height);
+                padding-block: 0.8em;
+            }
+
+            input, textarea{
+                padding-inline: 1.5em;
+                border-radius: 0.6em;
+                border: 0.2em solid var(--form-input-border-line);
+            }
+            
+            .error{
+                color: red;
+                font-size: var(--form-error-font-size);
+                position: absolute;
+                bottom: -2ch; left: 0px;
+            }
+
+            .error-max{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                bottom: -2ch;
+                width: 100%;
+                
+                .max-char{
+                    color: grey;
+                    text-align: end;
+                }
+            }
+        }
+
+        button{
+            align-self: var(--form-button-align-self);
+
+            span{
+                margin-inline-start: 1em;
+            }
+        }
+    }
+}

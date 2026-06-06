@@ -1,0 +1,54 @@
+
+@media (max-width: 800px){
+
+    .form-section{
+        --form-grid-columns: 1;
+        --form-button-align-self: stretch;
+        --form-row-gap: 8cqw;
+        --form-label-font-size: 1.8cqw;
+        --form-error-font-size: 1.6cqw;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .form-section{
+        --form-label-font-size: 2.5cqw;
+        --form-error-font-size: 2.2cqw;
+
+        --form-grid-row-gap: 7cqw;
+        --form-group-row-gap: 2cqw;
+
+        --form-input-height: 12cqw;
+        --form-textarea-height: 30cqw;
+        
+        form {
+            .form-group{
+                textarea{
+                    padding-block: 0.8em;
+                }
+
+                input, textarea{
+                    padding-inline: 1.5em;
+                    border-radius: 0.6em;
+                    border: 0.2em solid var(--form-input-border-line);
+                }
+                
+                .error-max{
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    .max-char{
+                        color: grey;
+                    }
+                }
+            }
+
+            button{
+                margin-top: 4cqw;
+            }
+        }
+    }
+
+}

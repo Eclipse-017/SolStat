@@ -4,18 +4,20 @@ import './styles/reset.css'
 import './styles/utilities.css'
 import './styles/queries.css'
 
-import VideoSection from './components/VideoSection/VideoSection'
 import HeroSection from './components/HeroSection/HeroSection'
+import VideoSection from './components/VideoSection/VideoSection'
 import ImageSection from './components/ImageSection/ImageSection'
 import TableSection from './components/TableSection/TableSection'
+import FormSection from './components/FormSection/FormSection'
 
 function App() {
   return (
     <>
       <HeroSection />
-      <VideoSection src='/video/video.mp4' />
+      <VideoSection src='/public/video/video.mp4'/>
       <ImageSection />
       <TableSection />
+      <FormSection />
     </>
   )
 }
