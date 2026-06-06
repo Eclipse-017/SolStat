@@ -6,16 +6,16 @@ import './styles/queries.css'
 
 import VideoSection from './components/VideoSection/VideoSection'
 import HeroSection from './components/HeroSection/HeroSection'
-import ImageSection from './components/imageSection/ImageSection'
+import ImageSection from './components/ImageSection/ImageSection'
 import TableSection from './components/TableSection/TableSection'
 
 function App() {
   return (
     <>
-      <VideoSection src='/public/video/video.mp4' />
+      <HeroSection />
+      <VideoSection src='/video/video.mp4' />
       <ImageSection />
       <TableSection />
-      <HeroSection></HeroSection>
     </>
   )
 }
