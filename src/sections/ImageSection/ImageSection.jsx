@@ -24,16 +24,15 @@ const ImageSection = () => {
   }, []);
 
   return (
-    <MainSection  className="img-section">
-      <section className="img-section">
-        
-        <HeadingTwo className="image-heading"
+    <MainSection  className="image-section">
+        <HeadingTwo 
+          className="image-heading"
           title="Visualizing the Differences Between Planets"
           description="Each planet in our solar system has unique physical characteristics.
           Visual comparisons help highlight how vastly different terrestrial
           planets are from gas giants and ice giants."/>
 
-        <div className="planet-container">
+        <div className="planet-grid">
           {planets.map((planet, index) => (
             // <figure
             //   key={index} className="img-card"
@@ -61,10 +60,10 @@ const ImageSection = () => {
         {/* <figcaption className="img-figcaption">
           The Nine Planets in Our Solar System.
         </figcaption> */}
-      </section>
+
     </MainSection>
 
-    );
+  );
 }
  
 export default ImageSection;

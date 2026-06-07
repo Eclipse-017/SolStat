@@ -1,6 +1,4 @@
-import './FormSectionVariables.css'
-import './FormSectionStyles.css'
-import './FormSectionQueries.css'
+import './FormSection.css'
 
 import HeadingTwo from '../../components/HeadingTwo/HeadingTwo'
 import HeadingThree from '../../components/HeadingThree/HeadingThree'
@@ -173,7 +171,6 @@ function FormSection(){
                     <Button className="btn-long" type='submit'/>
                 </form>
             }
-            
         </MainSection>
     )
 }

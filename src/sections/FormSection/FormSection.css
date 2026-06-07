@@ -1,13 +1,31 @@
+:root{
+    --form-sec-bg-clr: hsl(0, 0%, 95%);
+
+    --form-button-align-self: self-start; 
+    
+    --form-grid-row-gap: 2rem;
+    --form-grid-col-gap: 1.3rem;
+    --form-grid-columns: 2;
+    
+    --form-group-row-gap: 0.8rem;
+
+    --form-success-row-gap: 1rem;
+
+    --form-label-font-size: 1rem;
+    --form-error-font-size: 0.9rem;
+
+    --form-input-height: 7ch;
+    --form-input-border-line: lightgray;
+    --form-textarea-height: 7ch;
+}
+
 .form-section{
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--form-row-gap);
     background-color: var(--form-sec-bg-clr);
 
     .submission-container{
         display: flex;
         flex-direction: column;
-        row-gap: var(--form-row-gap);
+        row-gap: var(--sec-row-gap);
 
         .btn-success{
             margin-right: auto;
@@ -17,7 +35,7 @@
     form{
         display: flex;
         flex-direction: column;
-        row-gap: var(--form-row-gap);
+        row-gap: var(--sec-row-gap);
         
         .form-grid{
             display: grid;
@@ -81,4 +99,57 @@
             }
         }
     }
+}
+
+@media (max-width: 800px){
+
+    .form-section{
+        --form-grid-columns: 1;
+        --form-button-align-self: stretch;
+        --form-label-font-size: 1.8cqw;
+        --form-error-font-size: 1.6cqw;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .form-section{
+        --form-label-font-size: 2.5cqw;
+        --form-error-font-size: 2.2cqw;
+
+        --form-grid-row-gap: 7cqw;
+        --form-group-row-gap: 2cqw;
+
+        --form-input-height: 12cqw;
+        --form-textarea-height: 30cqw;
+        
+        form {
+            .form-group{
+                textarea{
+                    padding-block: 0.8em;
+                }
+
+                input, textarea{
+                    padding-inline: 1.5em;
+                    border-radius: 0.6em;
+                    border: 0.2em solid var(--form-input-border-line);
+                }
+                
+                .error-max{
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    .max-char{
+                        color: grey;
+                    }
+                }
+            }
+
+            button{
+                margin-top: 4cqw;
+            }
+        }
+    }
+
 }

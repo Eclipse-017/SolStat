@@ -5,18 +5,18 @@ import './styles/utilities.css'
 import './styles/queries.css'
 
 import HeroSection from './sections/HeroSection/HeroSection'
-import VideoSection from './sections/VideoSection/VideoSection'
 import ImageSection from './sections/ImageSection/ImageSection'
 import TableSection from './sections/TableSection/TableSection'
 import FormSection from './sections/FormSection/FormSection'
+import VideoSection from './sections/VideoSection/VideoSection'
 
 function App() {
   return (
     <>
       <HeroSection />
       <main>
-        <VideoSection src='/public/video/video.mp4'/>
         <ImageSection />
+        <VideoSection src='/public/video/video.mp4'/>
         <TableSection />
         <FormSection />
       </main>

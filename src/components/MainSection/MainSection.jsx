@@ -1,6 +1,6 @@
 import './MainSection.css'
 
-function MainSection({className, children}){
+function MainSection({className="", children}){
     return(
         <section className={`main-section ${className}`}>
             {children}
