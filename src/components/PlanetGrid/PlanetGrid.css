@@ -1,0 +1,40 @@
+:root{
+    --planet-grid-cols: 3;
+    --planet-grid-gaps: 3;
+}
+
+.planet-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--planet-grid-cols), 1fr);
+    gap: 5cqw;
+    justify-content: center;
+}
+
+@media (max-width: 800px){
+
+    .planet-grid{
+        --planet-grid-cols: 2;
+
+        & > .planet-card{
+            --planet-card-image-height: 60cqh;
+            --planet-card-info-height: 40cqh;
+            
+            &:not(:last-of-type){
+                aspect-ratio: 1/1.5;
+
+                --planet-card-info-name-font-size: 6cqw;
+                --planet-card-info-distance-font-size: 5cqw;
+            }
+
+            &:last-of-type{
+                grid-column: span 2;
+                aspect-ratio: 3/2;
+
+                --planet-card-info-name-font-size: 4cqw;
+                --planet-card-info-distance-font-size: 3cqw;
+            }
+        }
+    }
+
+}

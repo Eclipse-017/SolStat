@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import './imageSection.css';
 import HeadingTwo from "../../components/HeadingTwo/HeadingTwo";
 import PlanetCard from "../../components/PlanetCard/PlanetCard";
-import MainSection from '../../components/MainSection/MainSection'
+import PlanetGrid from "../../components/PlanetGrid/PlanetGrid";
+import MainSection from '../../components/MainSection/MainSection';
 
 const ImageSection = () => {
 
@@ -31,28 +32,19 @@ const ImageSection = () => {
           description="Each planet in our solar system has unique physical characteristics.
           Visual comparisons help highlight how vastly different terrestrial
           planets are from gas giants and ice giants."/>
-
-        <div className="planet-container">
-          {planets.map((planet, index) => (
-            <figure
-              key={index} className="img-card"
-            >
-                  <img
-                  src={planet.image}
-                  alt={planet.planet}
-                  className="planet-img"
-                
-                />
-              <div className="planet-details">
-                <div>Planet name: {planet.planet}</div>
-                <div>Distance from Sun: {planet.distanceFromSun}</div>
-              </div>
-            </figure>
-          ))}
-        </div>
-        <figcaption className="img-figcaption">
-          The Nine Planets in Our Solar System.
-        </figcaption>
+          
+        <PlanetGrid>
+          {
+            planets.map((planet, index) => (
+              <PlanetCard index={index}
+              src={planet.image} 
+              alt={planet.planet}
+              name={planet.planet}
+              distance={planet.distanceFromSun}
+              />
+            ))
+          }
+        </PlanetGrid>
 
     </MainSection>
 
