@@ -13,12 +13,13 @@ import VideoSection from './sections/VideoSection/VideoSection'
 function App() {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
+
       <main>
+        {/* <VideoSection src='/public/video/video.mp4'/> */}
         <ImageSection />
-        <VideoSection src='/public/video/video.mp4'/>
-        <TableSection />
-        <FormSection />
+        {/* <TableSection /> */}
+        {/* <FormSection /> */}
       </main>
 
       {/* FOOTER */}

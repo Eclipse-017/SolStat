@@ -34,32 +34,32 @@ const ImageSection = () => {
 
         <div className="planet-grid">
           {planets.map((planet, index) => (
-            // <figure
-            //   key={index} className="img-card"
-            // >
-            //       <img
-            //       src={planet.image}
-            //       alt={planet.planet}
-            //       className="planet-img"
+            <figure
+              key={index} className="img-card"
+            >
+                  <img
+                    src={planet.image}
+                    alt={planet.planet}
+                    className="planet-img"
                 
-            //     />
-            //   <div className="planet-details">
-            //     <div>Planet name: {planet.planet}</div>
-            //     <div>Distance from Sun: {planet.distanceFromSun}</div>
-            //   </div>
-            // </figure>
+                />
+              <div className="planet-details">
+                <div>Planet name: {planet.planet}</div>
+                <div>Distance from Sun: {planet.distanceFromSun}</div>
+              </div>
+            </figure>
             
-            <PlanetCard
-              className="img-card"
-              src={planet.image}
-              alt={planet.planet}
-              name={planet.planet}
-              distance={planet.distanceFromSun}/>
+            // <PlanetCard
+            //   className="img-card"
+            //   src={planet.image}
+            //   alt={planet.planet}
+            //   name={planet.planet}
+            //   distance={planet.distanceFromSun}/>
           ))}
         </div>
-        {/* <figcaption className="img-figcaption">
+        <figcaption className="img-figcaption">
           The Nine Planets in Our Solar System.
-        </figcaption> */}
+        </figcaption>
 
     </MainSection>
 

@@ -31,14 +31,14 @@
 
 .img-card {
   padding: 0;
-  /* box-sizing: border-box; */
-  /* overflow: hidden; */
-  /* margin: 0; */
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
   width: 23rem;
   min-width: 8rem;
   max-width: 25rem;
-   /* background: white; */
-   /* border-radius: 1rem; */
+  background: white;
+  border-radius: 1rem;
 }
 
 .planet-img {
