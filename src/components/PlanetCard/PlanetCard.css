@@ -2,7 +2,7 @@
     --planet-card-bg-clr: black;
     --planet-card-info-bg-clr: white;
 
-    --planet-card-block-spacing: 1cqh;
+    --planet-card-block-spacing: 1.5cqh;
     --planet-card-inline-spacing: 2cqw;
 
     --planet-card-border-radius: 8cqw;
@@ -12,12 +12,14 @@
 
     --planet-card-aspect-ratio: 1/0.9;
 
-    --planet-card-image-width: 100cqw;
-    --planet-card-image-height: 75cqh;
+    --planet-card-image-height: 70cqh;
     --planet-card-image-border-radius: 0px;
     
     --planet-card-info-width: 100cqw;
-    --planet-card-info-height: 25cqh;
+    --planet-card-info-height: 30cqh;
+
+    --planet-card-info-tag-font-size: 2cqw;
+    --planet-card-info-tag-gap: 0.5em;
 
     --planet-card-info-name-font-size: 4.5cqw;
     --planet-card-info-distance-font-size: 3.5cqw;
@@ -38,6 +40,7 @@
         --planet-card-info-width: 90cqw;
         --planet-card-info-height: 40cqh;
 
+        --planet-card-info-tag-font-size: 3cqw;
         --planet-card-info-name-font-size: 7cqw;
         --planet-card-info-distance-font-size: 6cqw;
         
@@ -52,7 +55,7 @@
         
         .planet-image-container{
             background-color: var(--planet-card-bg-clr);
-            width: var(--planet-card-image-width);
+            width: 100cqw;
             height: var(--planet-card-image-height);
             border-radius: var(--planet-card-image-border-radius);
 
@@ -78,12 +81,25 @@
             padding-block: var(--planet-card-block-spacing);
             padding-inline: var(--planet-card-inline-spacing);
             row-gap: var(--planet-card-block-spacing);
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             margin-inline: auto;
             transition: all 
                 var(--planet-card-trans-duration) 
                 var(--planet-card-trans-motion);
+
+            .planet-info-group{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .planet-info-tag{
+                font-size: var(--planet-card-info-tag-font-size);
+                color: var(--description-clr);
+                padding-block-end: 0.3cqw;
+            }
 
             .planet-name{
                 font-size: var(--planet-card-info-name-font-size);

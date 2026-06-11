@@ -23,8 +23,16 @@
             &:not(:last-of-type){
                 aspect-ratio: 1/1.5;
 
+                --planet-card-info-tag-font-size: 4cqw;
                 --planet-card-info-name-font-size: 6cqw;
                 --planet-card-info-distance-font-size: 5cqw;
+
+                &:hover{
+                    --planet-card-image-height: 100cqh;
+                    --planet-card-info-height: 40cqh;
+                    --planet-card-info-name-font-size: 8cqw;
+                    --planet-card-info-distance-font-size: 7cqw;
+                }
             }
 
             &:last-of-type{
@@ -33,6 +41,14 @@
 
                 --planet-card-info-name-font-size: 4cqw;
                 --planet-card-info-distance-font-size: 3cqw;
+
+                &:hover{
+                    --planet-card-info-translateY: -55cqh;
+                    --planet-card-image-height: 100cqh;
+                    --planet-card-info-height: 50cqh;
+                    --planet-card-info-name-font-size: 6cqw;
+                    --planet-card-info-distance-font-size: 5cqw;
+                }
             }
         }
     }
