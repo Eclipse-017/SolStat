@@ -15,7 +15,6 @@ function HeroSection() {
       </header>
 
       {/* HERO SECTION */}
-      <main>
         <section className="hero-section">
 
           <div className="hero-content">
@@ -40,7 +39,6 @@ function HeroSection() {
           </div>
 
         </section>
-      </main>
     </> );           
 }
 
