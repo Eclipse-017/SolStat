@@ -1,6 +1,6 @@
 table {
     width: 100%;
-    font-size: 14px;
+    font-size: 0.8rem;
     border: 2px solid #ffffff;
     margin: 0 !important;
     border-collapse: collapse;
@@ -62,13 +62,30 @@ table {
 }
 
 .caption {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 2cqh;
     text-align: left;
+    color: var(--scheme-clr);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
+    .caption {
+        font-size: 1cqw;
+    }
+}
+
+@media (max-width: 1000px) {
+    table {
+        font-size: 1.3cqw;
+    }
+
+    .caption {
+        font-size: 1.5cqw;
+    }
+}
+
+@media (max-width: 800px) {
     .table-section {
         display: none;
     }
