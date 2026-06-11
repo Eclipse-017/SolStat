@@ -22,6 +22,7 @@ function HeroSection() {
               Explore Our Solar System<br />
               Through Data
             </h1>
+            
             <p>
               Understand the planets not just by name, but by measurable <br />
               facts. From size and mass to gravity and density, this page<br />
