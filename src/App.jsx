@@ -9,6 +9,7 @@ import ImageSection from './sections/ImageSection/ImageSection'
 import TableSection from './sections/TableSection/TableSection'
 import FormSection from './sections/FormSection/FormSection'
 import VideoSection from './sections/VideoSection/VideoSection'
+import FooterSection from './sections/FooterSection/FooterSection'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       </main>
 
       {/* FOOTER */}
+       <FooterSection />
     </>
   )
 }
