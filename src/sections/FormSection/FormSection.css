@@ -1,8 +1,6 @@
 :root{
     --form-sec-bg-clr: hsl(0, 0%, 95%);
 
-    --form-button-align-self: self-start; 
-    
     --form-grid-row-gap: 2rem;
     --form-grid-col-gap: 1.3rem;
     --form-grid-columns: 2;
@@ -92,7 +90,7 @@
         }
 
         button{
-            align-self: var(--form-button-align-self);
+            width: none;
 
             span{
                 margin-inline-start: 1em;
@@ -105,9 +103,12 @@
 
     .form-section{
         --form-grid-columns: 1;
-        --form-button-align-self: stretch;
         --form-label-font-size: 1.8cqw;
         --form-error-font-size: 1.6cqw;
+
+        form button{
+            width: 100%;
+        }
     }
 
 }

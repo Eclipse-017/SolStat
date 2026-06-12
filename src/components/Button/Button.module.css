@@ -1,10 +1,4 @@
 :root{
-    --btn-min-width: 10rem;
-    --btn-min-width-long: 20rem;
-    --btn-height: 3rem;
-    --btn-padding-inline: 2rem;
-    --btn-border-line: 0.08em;
-    --btn-border-raduis: 0.8em;
     --btn-bg-color: hsl(219, 78%, 39%);
     --btn-bg-color-hover: hsl(219, 78%, 49%);
     --btn-bg-color-active: hsl(219, 78%, 59%);
@@ -13,22 +7,29 @@
     --btn-bg-color-alt-active: hsl(224, 86%, 34%);
     --btn-fg-color: #ffffff;
     --btn-fg-color-alt: #ffffff;
+    --btn-width: 11rem;
+    --btn-width-long: 20rem;
+    --btn-height: 6ch;
+    --btn-padding-inline: 2rem;
+    --btn-border-line: 0.08rem;
+    --btn-border-raduis: 0.8rem;
     --btn-font-size: 0.8rem;
 }
 
 button{
-    border-radius: var(--btn-border-raduis);
     background-color: var(--btn-bg-color);
     color: var(--btn-fg-color);
-    font-size: var(--btn-font-size);
-    padding-inline: var(--btn-padding-inline);
+    width: var(--btn-width);
     height: var(--btn-height);
-    min-width: var(--btn-min-width);
+    font-size: var(--btn-font-size);
+    border-radius: var(--btn-border-raduis);
+    padding-inline: var(--btn-padding-inline);
     border: none; outline: none;
     transition: all 0.05s ease-in;
 
     &:hover{
         background-color: var(--btn-bg-color-hover);
+        cursor: pointer;
     }
 
     &:active{
@@ -51,7 +52,7 @@ button{
     }
 
     &.btn-long{
-        min-width: var(--btn-min-width-long);        
+        width: var(--btn-width-long);        
     }
 
     a {
@@ -63,7 +64,7 @@ button{
 @media (max-width: 600px){
 
     button{
-        --btn-min-width: 6cqw;
+        --btn-width: 6cqw;
         --btn-min-width-long: 100%;
         --btn-height: 10cqw;
         --btn-padding-inline: 5cqw;
