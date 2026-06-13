@@ -8,7 +8,7 @@ A React based collaborative website design for the final capstone project from G
 Team Co-Build is the 26th group assigned by TS Academy Phoenix  to participate in the collaborative final capstone project as part of the core requirements for the completion of the FrontEnd Development Phoenix Cohort. This project entails coding and hosting of a mockup figma design of a planet education website into a working web application using **React**, **HTML**, **CSS** and **Javascript**. It was designed to assess and demonstrate the team's proficiency in core front-end development, API integration, responsive design, React architecture, Git collaboration, documentation, and application deployment while translating provided designs into functional web applications - all skills covered throughout the Front-End Development TS Academy Course
 
 # Team Members
-1. Ajibade Abdulsalam - Team Lead
+1. Ajibade Abdulsalam https://github.com/Eclipse-017- Team Lead
 2. Esther Okpor https://github.com/Estimilita/Estimilita - Asst Team Lead 1
 3. Richard Okafor https://github.com/Rekahdo - Asst Team Lead 2
 4. Adebayo Adebanjo https://github.com/silver-orioha
