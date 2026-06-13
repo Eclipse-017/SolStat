@@ -22,7 +22,6 @@
     overflow: hidden;
     font-size: 1rem;
 
-
     .hero-content{
         flex-grow: 1;
         display: flex;
@@ -43,7 +42,7 @@
             
             p{
                 width: 46ch;
-                font-size: 1.125em;
+                font-size: 1.4em;
                 line-height: 2.5ch;
             }
 
@@ -119,11 +118,10 @@
 
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1450px) {
 
     .hero-section{
-        height: 100dvh;
-        font-size: 1cqw;
+        font-size: 1.1cqw;
     }
     
 }
@@ -140,7 +138,7 @@
     
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 
     .hero-section{
 
@@ -153,7 +151,7 @@
             align-items: center;
             
             .hero-image{
-                width: 15rem;
+                width: 17rem;
                 aspect-ratio: 1;
                 order: -1;
                 justify-content: center;
@@ -165,14 +163,15 @@
                 align-items: center;
                 justify-content: space-evenly;
                 text-align: center;
-
+                
                 h1{
-                    font-size: 2rem;
+                    font-size: 3rem;
+                    width: 80%;
                 }
                 
                 p{
                     font-size: 1.1rem;
-                    width: 27ch;
+                    width: 90%;
                 }
 
                 .buttons{
@@ -194,25 +193,22 @@
     .hero-section{
 
         .hero-content{
-            font-size: 1.2cqw;
-            
-            .hero-image{
-                width: 60%;
-            }
             
             .hero-info{
                 width: 100%;
-
+                
                 h1{
-                    font-size: 7cqw;
+                    font-size: 2rem;
+                    width: 100%;
                 }
                 
                 p{
-                    font-size: 4cqw;
+                    font-size: 1.1rem;
+                    width: 100%;
                 }
-
+                
                 .buttons{
-                    width: 90%;
+                    width: 100%;
 
                     & > a{
                         font-size: 3cqw;
@@ -220,7 +216,6 @@
                 }
 
             }
-            
         }
     }
 }
@@ -229,7 +224,7 @@
 
     section.hero-section{
         height: auto;
-        padding-block: 20cqw;
+        /* padding-block: 20cqw; */
 
         .hero-header{
             img{
@@ -240,8 +235,20 @@
         .hero-content{
             row-gap: 10cqw;
             
+            .hero-image{
+                width: 70cqw;
+            }
+            
             .hero-info{
                 row-gap: 10cqw;
+
+                h1{
+                    font-size: 9.2cqw;
+                }
+                
+                p{
+                    font-size: 5cqw;
+                }
             }
         }
     }

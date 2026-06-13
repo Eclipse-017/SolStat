@@ -46,7 +46,9 @@
         
         .planet-figure .planet-info{
             transform: translateY(var(--planet-card-info-translateY));
+            background-color: #f2f7ff;
         }
+
     }
     
     .planet-figure{
@@ -99,6 +101,7 @@
                 font-size: var(--planet-card-info-tag-font-size);
                 color: var(--description-clr);
                 padding-block-end: 0.3cqw;
+                font-weight: bold;
             }
 
             .planet-name{
