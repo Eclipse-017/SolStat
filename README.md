@@ -93,6 +93,12 @@ http://localhost:5173/
 Open the link by Copying and pasting the address into your web browser. The application should now be running locally and ready for development.
 
 
-# Conclusion
+### Conclusion
 
 Through this collaborative approach, Team Co-Build successfully recreated the provided Figma design into a functional React web application while demonstrating the principles of component-based development, responsive design, version control, and teamwork.
+
+
+
+
+### Project domain
+https://solstat.vercel.app/
