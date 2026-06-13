@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import './imageSection.css';
+import './ImageSection.css';
 import HeadingTwo from "../../components/HeadingTwo/HeadingTwo";
 import PlanetCard from "../../components/PlanetCard/PlanetCard";
 import PlanetGrid from "../../components/PlanetGrid/PlanetGrid";
