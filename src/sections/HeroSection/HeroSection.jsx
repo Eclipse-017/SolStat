@@ -7,7 +7,7 @@ function HeroSection() {
       <header className='hero-header'>
         <nav>
           <a href="logo-container">
-            <img src="src/assets/graphics.png" alt="Logo" />
+            <img src="src/assets/logo.png" alt="Logo" />
           </a>
         </nav>
       </header>
