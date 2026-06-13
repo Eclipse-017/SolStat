@@ -34,7 +34,7 @@ function HeroSection() {
         </div>
 
         <div className="hero-image">
-            <img src="src\assets\heroimage.png" alt="The Blue Earth" width="100px"/> 
+            <img src="src\assets\hero-planet.svg" alt="The Blue Earth" width="100px"/> 
         </div>
 
       </section>
