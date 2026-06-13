@@ -2,6 +2,7 @@
 A React based collaborative website design for the final capstone project from Group 26, FrontEnd Academy Class 2026, TS Academy Phoenix Cohort 2026.
 
 # Live Demo
+This is the deployed link for the website: https://solstat.vercel.app/
 
 
 # Project Summary
