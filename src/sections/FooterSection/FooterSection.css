@@ -32,7 +32,7 @@ footer .container {
 }
 
 footer a {
-  color: white;
+  color: rgb(220, 246, 255);
   text-decoration: none;
 
   &:hover{
