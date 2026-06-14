@@ -6,7 +6,7 @@ This is the deployed link for the website: https://solstat.vercel.app/
 
 
 # Project Summary
-Team Co-Build is the 26th group assigned by TS Academy Phoenix  to participate in the collaborative final capstone project as part of the core requirements for the completion of the FrontEnd Development Phoenix Cohort. This project entails coding and hosting of a mockup figma design of a planet education website into a working web application using **React**, **HTML**, **CSS** and **Javascript**. It was designed to assess and demonstrate the team's proficiency in core front-end development, API integration, responsive design, React architecture, Git collaboration, documentation, and application deployment while translating provided designs into functional web applications - all skills covered throughout the Front-End Development TS Academy Course
+Team SolStat is the 26th group assigned by TS Academy Phoenix to participate in the collaborative final capstone project as part of the core requirements for the completion of the FrontEnd Development Phoenix Cohort 2026. This project entails coding and hosting of a mockup figma design of a planet education website into a working web application using **React**, **HTML**, **CSS** and **Javascript**. It was designed to assess and demonstrate the team's proficiency in core front-end development, API integration, responsive design, React architecture, Git collaboration, documentation, and application deployment while translating provided designs into functional web applications - all skills covered throughout the Front-End Development TS Academy Course
 
 # Team Members
 1. Ajibade Abdulsalam https://github.com/Eclipse-017- Team Lead
@@ -90,7 +90,7 @@ Install all required project dependencies by running:npm install
 This command will create a node_modules folder containing the packages required for the application to run.
 
 Additionally, the project uses Yup for additional form validation and React Scroll for smooth page scrolling effect. 
-If these libraries are not included in the installed dependencies, install it separately using this commands:
+If these libraries are not included in the installed dependencies, install them separately using these commands:
 npm i yup
 npm i react-scroll
 
@@ -102,9 +102,9 @@ npm run dev
 After the server starts successfully, the terminal will display a local URL similar to:
 http://localhost:5173/
 
-Open the link by Copying and pasting the address into your web browser. The application should now be running locally and ready for development.
+Open the link by Copying and pasting the address into your web browser. The application should now be running locally.
 
 
 ### Conclusion
 
-Through this collaborative approach, Team Co-Build successfully recreated the provided Figma design into a functional React web application while demonstrating the principles of component-based development, responsive design, version control, and teamwork.
+Through this collaborative approach, Team SolStat successfully recreated the provided Figma design into a functional React web application while demonstrating the principles of component-based development, responsive design, version control, and teamwork.
