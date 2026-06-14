@@ -108,10 +108,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 40em;
-
+            width: 43em;
+            
             img{
-                width: 90%;
+                width: 100%;
                 object-fit: contain;
             }
         }

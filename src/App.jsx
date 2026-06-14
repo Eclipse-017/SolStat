@@ -11,19 +11,20 @@ import FormSection from './sections/FormSection/FormSection'
 import VideoSection from './sections/VideoSection/VideoSection'
 import FooterSection from './sections/FooterSection/FooterSection'
 
+import solStatVideo from './assets/video.mp4';
+
 function App() {
   return (
     <>
       <HeroSection />
 
       <main>
-        <VideoSection src='/public/video/video.mp4'/>
+        <VideoSection src={solStatVideo}/>
         <ImageSection />
         <TableSection />
         <FormSection />
       </main>
 
-      {/* FOOTER */}
        <FooterSection />
     </>
   )
