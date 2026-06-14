@@ -45,7 +45,16 @@ The Table Section was implemented by **Silver Orioha**. She was responsible for 
 
 ### 5. Form Section
 
-The Form Section was handled by **Richard Okafor**. He implemented the structure and styling of the user input and form validation while ensuring consistency with the overall design language of the application.  
+The Form Section was handled by **Richard Okafor**. He implemented the structure and styling of the user input and form validation while ensuring consistency with the overall design language of the application. 
+ 
+#### Technical Features & Core Implementation
+
+* **Dual-Layer Client Validation:** Implements native HTML5 constraint validation attributes (`required`, `maxLength`, and semantic `type="email"/"tel"`) directly on form inputs. This acts as an immediate structural boundary, providing a lightweight fallback validation layer before JavaScript execution begins.
+* **Schema-Based Validation:** Leverages the **Yup** validation parsing engine to enforce rigorous data-integrity rules asynchronously prior to network dispatch. It features custom validation patterns, including a robust Regex matcher engineered to accept both standard and internationalized Nigerian phone formats (`0...` or `+234...`).
+* **Real-time State & Constraint Tracking:** Implements dual-purpose real-time UI state tracking. As the user inputs text, character thresholds are automatically evaluated, and a dynamic tracking system calculates string limits to display exactly how many characters remain out of the maximum allocation ($100$ characters).
+* **Network Interruption & Offline Resilience:** Employs a defensive connection fail-safe utilizing the browser's native `navigator.onLine` API. If a user tries to submit data while offline, the system halts execution immediately, blocks processing queues, and triggers a localized network alert banner without exhausting bandwidth.
+* **Form URL-Encoding Serialization:** Implements asynchronous `fetch` requests pointing to the designated backend API layer (`https://whitebricks.com/tsacademy.php`). Raw state objects are securely transformed on the fly into `application/x-www-form-urlencoded` formats utilizing the modern `URLSearchParams` web standard.
+* **Accessible (A11y) Architecture:** Built entirely utilizing accessible semantic elements. The form container incorporates dynamic `aria-live` regions (`assertive` and `polite`), paired with programmatic validation attributes (`aria-invalid` and `aria-describedby`) to automatically broadcast field-error states to assistive screen readers.
 
 ### 6. Footer Section
 
@@ -97,9 +106,3 @@ Open the link by Copying and pasting the address into your web browser. The appl
 ### Conclusion
 
 Through this collaborative approach, Team Co-Build successfully recreated the provided Figma design into a functional React web application while demonstrating the principles of component-based development, responsive design, version control, and teamwork.
-
-
-
-
-### Project domain
-https://solstat.vercel.app/
