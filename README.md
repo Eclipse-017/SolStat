@@ -89,8 +89,10 @@ Install all required project dependencies by running:npm install
 
 This command will create a node_modules folder containing the packages required for the application to run.
 
-Additionally, the project uses Yup for additional form validation. If it is not included in the installed dependencies, install it separately using:
+Additionally, the project uses Yup for additional form validation and React Scroll for smooth page scrolling effect. 
+If these libraries are not included in the installed dependencies, install it separately using this commands:
 npm i yup
+npm i react-scroll
 
 ### Step 5: Start the Development Server
 Since the application is built with Vite, start the local development server with:
