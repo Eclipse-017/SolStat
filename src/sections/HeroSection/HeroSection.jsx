@@ -1,5 +1,7 @@
 import './HeroSection.css';
 import MainSection from '../../components/MainSection/MainSection'
+import logo from '../../assets/logo.png';
+import heroPlanet from '../../assets/hero-planet.svg';
 
 function HeroSection() {
     return (
@@ -7,7 +9,7 @@ function HeroSection() {
             <header className='hero-header'>
                 <nav aria-label="Main Navigation">
                     <a href="/" className="logo-container" aria-label="Go to homepage">
-                        <img src="src/assets/logo.png" alt="Solar Statistics Logo"/>
+                        <img src={logo} alt="Solar Statistics Logo"/>
                     </a>
                 </nav>
             </header>
@@ -35,7 +37,7 @@ function HeroSection() {
 
                 <div className="hero-image">
                     <img 
-                        src="src/assets/hero-planet.svg" 
+                        src={heroPlanet} 
                         alt="Illustrated rendering of Earth showing the continents and oceans" 
                         width="100"
                     /> 
