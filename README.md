@@ -2,10 +2,11 @@
 A React based collaborative website design for the final capstone project from Group 26, FrontEnd Academy Class 2026, TS Academy Phoenix Cohort 2026.
 
 # Live Demo
+This is the deployed link for the website: https://solstat.vercel.app/
 
 
 # Project Summary
-Team Co-Build is the 26th group assigned by TS Academy Phoenix  to participate in the collaborative final capstone project as part of the core requirements for the completion of the FrontEnd Development Phoenix Cohort. This project entails coding and hosting of a mockup figma design of a planet education website into a working web application using **React**, **HTML**, **CSS** and **Javascript**. It was designed to assess and demonstrate the team's proficiency in core front-end development, API integration, responsive design, React architecture, Git collaboration, documentation, and application deployment while translating provided designs into functional web applications - all skills covered throughout the Front-End Development TS Academy Course
+Team SolStat is the 26th group assigned by TS Academy Phoenix to participate in the collaborative final capstone project as part of the core requirements for the completion of the FrontEnd Development Phoenix Cohort 2026. This project entails coding and hosting of a mockup figma design of a planet education website into a working web application using **React**, **HTML**, **CSS** and **Javascript**. It was designed to assess and demonstrate the team's proficiency in core front-end development, API integration, responsive design, React architecture, Git collaboration, documentation, and application deployment while translating provided designs into functional web applications - all skills covered throughout the Front-End Development TS Academy Course
 
 # Team Members
 1. Ajibade Abdulsalam https://github.com/Eclipse-017- Team Lead
@@ -44,7 +45,16 @@ The Table Section was implemented by **Silver Orioha**. She was responsible for 
 
 ### 5. Form Section
 
-The Form Section was handled by **Richard Okafor**. He implemented the structure and styling of the user input and form validation while ensuring consistency with the overall design language of the application.  
+The Form Section was handled by **Richard Okafor**. He implemented the structure and styling of the user input and form validation while ensuring consistency with the overall design language of the application. 
+ 
+#### Technical Features & Core Implementation
+
+* **Dual-Layer Client Validation:** Implements native HTML5 constraint validation attributes (`required`, `maxLength`, and semantic `type="email"/"tel"`) directly on form inputs. This acts as an immediate structural boundary, providing a lightweight fallback validation layer before JavaScript execution begins.
+* **Schema-Based Validation:** Leverages the **Yup** validation parsing engine to enforce rigorous data-integrity rules asynchronously prior to network dispatch. It features custom validation patterns, including a robust Regex matcher engineered to accept both standard and internationalized Nigerian phone formats (`0...` or `+234...`).
+* **Real-time State & Constraint Tracking:** Implements dual-purpose real-time UI state tracking. As the user inputs text, character thresholds are automatically evaluated, and a dynamic tracking system calculates string limits to display exactly how many characters remain out of the maximum allocation ($100$ characters).
+* **Network Interruption & Offline Resilience:** Employs a defensive connection fail-safe utilizing the browser's native `navigator.onLine` API. If a user tries to submit data while offline, the system halts execution immediately, blocks processing queues, and triggers a localized network alert banner without exhausting bandwidth.
+* **Form URL-Encoding Serialization:** Implements asynchronous `fetch` requests pointing to the designated backend API layer (`https://whitebricks.com/tsacademy.php`). Raw state objects are securely transformed on the fly into `application/x-www-form-urlencoded` formats utilizing the modern `URLSearchParams` web standard.
+* **Accessible (A11y) Architecture:** Built entirely utilizing accessible semantic elements. The form container incorporates dynamic `aria-live` regions (`assertive` and `polite`), paired with programmatic validation attributes (`aria-invalid` and `aria-describedby`) to automatically broadcast field-error states to assistive screen readers.
 
 ### 6. Footer Section
 
@@ -79,8 +89,10 @@ Install all required project dependencies by running:npm install
 
 This command will create a node_modules folder containing the packages required for the application to run.
 
-Additionally, the project uses Yup for additional form validation. If it is not included in the installed dependencies, install it separately using:
+Additionally, the project uses Yup for additional form validation and React Scroll for smooth page scrolling effect. 
+If these libraries are not included in the installed dependencies, install them separately using these commands:
 npm i yup
+npm i react-scroll
 
 ### Step 5: Start the Development Server
 Since the application is built with Vite, start the local development server with:
@@ -90,15 +102,9 @@ npm run dev
 After the server starts successfully, the terminal will display a local URL similar to:
 http://localhost:5173/
 
-Open the link by Copying and pasting the address into your web browser. The application should now be running locally and ready for development.
+Open the link by Copying and pasting the address into your web browser. The application should now be running locally.
 
 
 ### Conclusion
 
-Through this collaborative approach, Team Co-Build successfully recreated the provided Figma design into a functional React web application while demonstrating the principles of component-based development, responsive design, version control, and teamwork.
-
-
-
-
-### Project domain
-https://solstat.vercel.app/
+Through this collaborative approach, Team SolStat successfully recreated the provided Figma design into a functional React web application while demonstrating the principles of component-based development, responsive design, version control, and teamwork.
