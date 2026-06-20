@@ -1,12 +1,31 @@
 import './App.css'
-import VideoSection from './components/VideoSection/VideoSection'
-import HeroSection from './components/HeroSection/HeroSection'
+import './styles/variables.css'
+import './styles/reset.css'
+import './styles/utilities.css'
+import './styles/queries.css'
 
-function App(){
-  return( 
+import HeroSection from './sections/HeroSection/HeroSection'
+import ImageSection from './sections/ImageSection/ImageSection'
+import TableSection from './sections/TableSection/TableSection'
+import FormSection from './sections/FormSection/FormSection'
+import VideoSection from './sections/VideoSection/VideoSection'
+import FooterSection from './sections/FooterSection/FooterSection'
+
+import solStatVideo from './assets/video.mp4';
+
+function App() {
+  return (
     <>
-      <HeroSection></HeroSection>
-      <VideoSection src='/public/video/video.mp4'/>
+      <HeroSection />
+
+      <main>
+        <VideoSection src={solStatVideo}/>
+        <ImageSection />
+        <TableSection />
+        <FormSection />
+      </main>
+
+       <FooterSection />
     </>
   )
 }

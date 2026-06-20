@@ -1,0 +1,76 @@
+:root{
+    --btn-bg-color: hsl(219, 78%, 39%);
+    --btn-bg-color-hover: hsl(219, 78%, 49%);
+    --btn-bg-color-active: hsl(219, 78%, 59%);
+    --btn-bg-color-alt: hsl(224, 86%, 14%);
+    --btn-bg-color-alt-hover: hsl(224, 86%, 24%);
+    --btn-bg-color-alt-active: hsl(224, 86%, 34%);
+    --btn-fg-color: #ffffff;
+    --btn-fg-color-alt: #ffffff;
+    --btn-width: 11rem;
+    --btn-width-long: 20rem;
+    --btn-height: 6ch;
+    --btn-padding-inline: 2rem;
+    --btn-border-line: 0.08rem;
+    --btn-border-raduis: 0.8rem;
+    --btn-font-size: 0.8rem;
+}
+
+button{
+    background-color: var(--btn-bg-color);
+    color: var(--btn-fg-color);
+    width: var(--btn-width);
+    height: var(--btn-height);
+    font-size: var(--btn-font-size);
+    border-radius: var(--btn-border-raduis);
+    padding-inline: var(--btn-padding-inline);
+    border: none; outline: none;
+    transition: all 0.05s ease-in;
+
+    &:hover{
+        background-color: var(--btn-bg-color-hover);
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+
+    &.btn-alt{
+        box-shadow: inset 0 0 0 var(--btn-border-line) white;
+        background-color: var(--btn-bg-color-alt);
+        color: var(--btn-fg-color-alt);
+
+        &:hover{
+            background-color: var(--btn-bg-color-alt-hover);
+        }
+    }
+
+    &.btn-trans{
+        background-color: transparent;
+        color: var(--btn-fg-color);
+    }
+
+    &.btn-long{
+        width: var(--btn-width-long);        
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 600px){
+
+    button{
+        --btn-width: 6cqw;
+        --btn-min-width-long: 100%;
+        --btn-height: 10cqw;
+        --btn-padding-inline: 5cqw;
+        --btn-border-line: 0.5cqw;
+        --btn-border-raduis: 1.5cqw;
+        --btn-font-size: 2.5cqw;
+    }
+
+}

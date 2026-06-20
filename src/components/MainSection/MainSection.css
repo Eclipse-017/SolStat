@@ -1,0 +1,25 @@
+:root{
+    --sec-min-height: 50cqh;
+    --sec-padding-block: 8cqh;
+    --sec-padding-inline: 5cqw;
+    --sec-row-gap: 6cqh;
+}
+
+.main-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--sec-row-gap);
+    padding-block: var(--sec-padding-block);
+    padding-inline: var(--sec-padding-inline);
+}
+
+@media (max-width: 800px){
+    
+    .main-section{
+        --sec-padding-block: 10cqw;
+        --sec-padding-inline: 8cqw;
+        --sec-row-gap: 8cqw;
+    }
+
+}

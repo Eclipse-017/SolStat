@@ -1,0 +1,9 @@
+:root{
+    --scheme-clr: hsl(224, 86%, 14%);
+
+    --heading-clr: #164BAF;
+    --description-clr: #0F2A44;
+    --description-strong-clr: #1274A4;
+
+    --media-border-raduis: 2cqw;
+}

@@ -1,0 +1,32 @@
+
+@media (max-width: 1500px){
+
+    .main-section{
+        /* border: 5px solid orange; */
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    .main-section{
+        /* border: 5px solid blue; */
+    }
+
+}
+
+@media (max-width: 800px){
+
+    .main-section{
+        /* border: 5px solid purple; */
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .main-section{
+        /* border: 5px solid green; */
+    }
+
+}
