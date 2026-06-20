@@ -6,7 +6,7 @@ import './styles/queries.css'
 
 
 import VideoSection from './sections/VideoSection/VideoSection'
-import solStatVideo from './assets/videos/solstat.mp4'
+import solStatVideo from './assets/video.mp4'
 
 function App() {
   return (
