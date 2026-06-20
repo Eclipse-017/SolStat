@@ -4,8 +4,8 @@ import './styles/reset.css'
 import './styles/utilities.css'
 import './styles/queries.css'
 
-
 import ImageSection from './sections/ImageSection/ImageSection'
+
 function App() {
   return (
     <>
