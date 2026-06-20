@@ -12,8 +12,8 @@ Team SolStat is the 26th group assigned by TS Academy Phoenix to participate in 
 1. Ajibade Abdulsalam https://github.com/Eclipse-017- Team Lead
 2. Esther Okpor https://github.com/Estimilita/Estimilita - Asst Team Lead 1
 3. Richard Okafor https://github.com/Rekahdo - Asst Team Lead 2
-4. Adebayo Adebanjo https://github.com/silver-orioha
-5. Silver Orioha https://github.com/bayoradebajo
+4. Adebayo Adebajo https://github.com/bayoradebajo
+5. Silver Orioha https://github.com/silver-orioha
 6. Tosin Abdul https://github.com/tosinabdul2-sudo
 
 # Team Contributions
@@ -37,7 +37,7 @@ The Image Section was implemented by **Esther Okpor**. She handled the layout an
 
 ### 3. Video Section
 
-The Video Section was developed by **Adebayo Adebanjo**. He integrated the video component and designed the surrounding content layout to provide users with an immersive educational experience.
+The Video Section was developed by **Adebayo Adebajo**. He integrated the video component and designed the surrounding content layout to provide users with an immersive educational experience.
 
 ### 4. Table Section
 
@@ -58,7 +58,7 @@ The Form Section was handled by **Richard Okafor**. He implemented the structure
 
 ### 6. Footer Section
 
-The Footer Section was developed by **Esther Okpor and Richard Okafor**. They both designed and styled the footer area, incorporating navigation elements and supplementary information while maintaining responsiveness.
+The Footer Section was developed by **Esther Okpor, Richard Okafor and Tosin Abdul**. They both designed and styled the footer area, incorporating navigation elements and supplementary information while maintaining responsiveness.
 
 ### 7. Reusable Components and Integration
 
@@ -68,35 +68,36 @@ The reusable components, application integration, and were overseen by **Richard
 # How to run the Project locally
 
 Before getting started, ensure that Node.js is installed on your computer. You can verify the installation by running:
-node -v
+* **node -v**
 
 If Node.js is not installed, download and install it from the official website.
 
 ### Step 1: Open Your Terminal
 Open your terminal or command prompt.
 
-### Step 2: Clone the Repository
+### Step 2: Navigate to the Project Directory
+Move into a folder's directory on your local drive:
+* **cd <folder-directory>**
+
+### Step 3: Clone the Repository
 
 Navigate to the directory where you would like to save the project and run:
-git clone <repository-url>
-
-### Step 3: Navigate to the Project Directory
-Move into the project's root directory (the directory containing the package.json file):
-cd <project-folder-name>
+* **git clone https://github.com/Eclipse-017/SolStat.git**
 
 ### Step 4: Install Dependencies
-Install all required project dependencies by running:npm install
+Install all required project dependencies by running:
+* **npm install**
 
 This command will create a node_modules folder containing the packages required for the application to run.
 
 Additionally, the project uses Yup for additional form validation and React Scroll for smooth page scrolling effect. 
 If these libraries are not included in the installed dependencies, install them separately using these commands:
-npm i yup
-npm i react-scroll
+* **npm i yup** 
+* **npm i react-scroll**
 
 ### Step 5: Start the Development Server
 Since the application is built with Vite, start the local development server with:
-npm run dev
+* **npm run dev**
 
 ### Step 6: Open the Application in Your Browser
 After the server starts successfully, the terminal will display a local URL similar to:
