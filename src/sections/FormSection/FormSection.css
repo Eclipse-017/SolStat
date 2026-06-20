@@ -1,0 +1,182 @@
+:root{
+    --form-sec-bg-clr: hsl(0, 0%, 95%);
+
+    --form-grid-row-gap: 2rem;
+    --form-grid-col-gap: 1.3rem;
+    --form-grid-columns: 2;
+    
+    --form-group-row-gap: 0.8rem;
+
+    --form-success-row-gap: 1rem;
+
+    --form-label-font-size: 1rem;
+    --form-error-font-size: 0.9rem;
+
+    --form-input-height: 7ch;
+    --form-input-border-line: lightgray;
+    --form-textarea-height: 7ch;
+}
+
+.form-section{
+    background-color: var(--form-sec-bg-clr);
+
+    .network-alert-banner {
+        background-color: #fce8e6;
+        border: 1px solid #ea4335;
+        border-radius: 0.6em;
+        padding: 1rem 1.5rem;
+        margin-bottom: 2rem;
+        
+        p {
+            color: #c5221f;
+            font-weight: 600;
+            margin: 0;
+            font-size: var(--form-label-font-size);
+        }
+    }
+
+    .submission-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--sec-row-gap);
+
+        .btn-success{
+            margin-right: auto;
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--sec-row-gap);
+        
+        .form-grid{
+            display: grid;
+            grid-template-columns: repeat(var(--form-grid-columns), 1fr);
+            row-gap: var(--form-grid-row-gap);
+            column-gap: var(--form-grid-col-gap);
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            row-gap: var(--form-group-row-gap);
+
+            *{
+                font-size: var(--form-label-font-size);
+            }
+            
+            input{
+                height: var(--form-input-height);
+            }
+
+            textarea{
+                height: var(--form-textarea-height);
+                padding-block: 0.8em;
+            }
+
+            input, textarea{
+                padding-inline: 1.5em;
+                border-radius: 0.6em;
+                border: 0.2em solid var(--form-input-border-line);
+            }
+
+            input:disabled, textarea:disabled {
+                background-color: #e0e0e0;
+                cursor: not-allowed;
+                border-color: #cccccc;
+                color: #757575;
+            }
+            
+            .error{
+                color: red;
+                font-size: var(--form-error-font-size);
+                position: absolute;
+                bottom: -2ch; left: 0px;
+            }
+
+            .error-max{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                bottom: -2ch;
+                width: 100%;
+                
+                .max-char{
+                    color: grey;
+                    text-align: end;
+                }
+            }
+        }
+
+        button{
+            width: none;
+
+            span{
+                margin-inline-start: 1em;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+
+    .form-section{
+        --form-grid-columns: 1;
+        --form-label-font-size: 1.8cqw;
+        --form-error-font-size: 1.6cqw;
+
+        form button{
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .form-section{
+        --form-label-font-size: 2.5cqw;
+        --form-error-font-size: 2.2cqw;
+
+        --form-grid-row-gap: 7cqw;
+        --form-group-row-gap: 2cqw;
+
+        --form-input-height: 12cqw;
+        --form-textarea-height: 30cqw;
+
+        .submission-container .btn-success{
+            width: 100%;
+        }
+        
+        form {
+            .form-group{
+                textarea{
+                    padding-block: 0.8em;
+                }
+
+                input, textarea{
+                    padding-inline: 1.5em;
+                    border-radius: 0.6em;
+                    border: 0.2em solid var(--form-input-border-line);
+                }
+                
+                .error-max{
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    .max-char{
+                        color: grey;
+                    }
+                }
+            }
+
+            button{
+                margin-top: 4cqw;
+            }
+        }
+    }
+
+}
