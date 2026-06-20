@@ -77,7 +77,7 @@ Open your terminal or command prompt.
 
 ### Step 2: Navigate to the Project Directory
 Move into a folder's directory on your local drive:
-* **cd <folder-directory>**
+* **cd folder-directory**
 
 ### Step 3: Clone the Repository
 
