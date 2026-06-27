@@ -6,7 +6,7 @@ function Button({children, className = "", onClick, type="submit", altBtn, ...pr
         .map(cls => styles[cls] || cls).join(' ')
 
     return(
-        <button className={`${styles.button} ${classes}`} type={type} onClick={onClick} {...props}>
+        <button className={`btn-ui ${styles.button} ${classes}`} type={type} onClick={onClick} {...props}>
             {children || <>Submit <span>&gt;</span></>} 
         </button>
     );
