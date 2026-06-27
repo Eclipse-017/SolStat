@@ -19,6 +19,7 @@
         & > .planet-card{
             --planet-card-image-height: 60cqh;
             --planet-card-info-height: 40cqh;
+            --planet-card-border-radius: 5cqw;
             
             &:not(:last-of-type){
                 aspect-ratio: 1/1.5;
@@ -39,4 +40,10 @@
         }
     }
 
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+    .planet-card:hover{
+        outline: 0.2em solid var(--heading-clr);
+    }
 }
