@@ -68,7 +68,7 @@ const FooterSection = () => {
             <div className="container">
               <div>
                 <span>Built by {" "}
-                    <a href="https://github.com/Eclipse-017/CoBuild" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/Eclipse-017/SolStat" target="_blank" rel="noopener noreferrer"
                       aria-label="Phoenix Group 26 GitHub Repository (opens in new tab)">
                       Phoenix Group 26.</a></span>
                 <span id="copyright"> All rights reserved</span>
