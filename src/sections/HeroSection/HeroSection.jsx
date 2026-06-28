@@ -32,8 +32,8 @@ function HeroSection() {
                     </p>
 
                     <div className="buttons">
-                        <Link to="image-section-id" spy={true} smooth={true} duration={500} aria-label="Explore the planetary data gallery">Explore the Data</Link>
-                        <Link to="form-section-id" smooth={true} duration={1200} className='btn-alt' aria-label="Scroll to contact inquiry form">Contact Us</Link>
+                        <Link to="image-section-id" spy={true} smooth={true} duration={500} className='btn-ui' aria-label="Explore the planetary data gallery">Explore the Data</Link>
+                        <Link to="form-section-id" smooth={true} duration={1200} className='btn-ui btn-alt' aria-label="Scroll to contact inquiry form">Contact Us</Link>
                     </div>
 
                 </div>

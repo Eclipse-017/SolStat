@@ -128,7 +128,7 @@
         --form-label-font-size: 1.8cqw;
         --form-error-font-size: 1.6cqw;
 
-        form button{
+        form button.btn-ui{
             width: 100%;
         }
     }

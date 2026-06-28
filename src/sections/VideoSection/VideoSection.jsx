@@ -14,6 +14,7 @@ function VideoSection({
                     <video 
                         autoPlay 
                         muted 
+                        playsInline
                         loop 
                         controls 
                         className='media-border-radius'

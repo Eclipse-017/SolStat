@@ -12,6 +12,13 @@
     .main-section{
         /* border: 5px solid blue; */
     }
+    
+    .btn-ui{
+        --btn-ui-padding-inline: 2cqw;
+        --btn-ui-outline-width: 0.3cqw;
+        --btn-ui-border-raduis: 0.8em;
+        --btn-ui-font-size: 0.8rem;
+    }
 
 }
 
@@ -27,6 +34,12 @@
 
     .main-section{
         /* border: 5px solid green; */
+    }
+
+    .btn-ui{
+        --btn-ui-width: 6cqw;
+        --btn-ui-height: 9.7cqw;
+        --btn-ui-font-size: 2.5cqw;
     }
 
 }
